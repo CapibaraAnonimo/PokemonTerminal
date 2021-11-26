@@ -1,24 +1,8 @@
 package pokemonTerminalModel;
 
 public class Pokemon {
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
+	
 	private int id;
 	
 	private int mv1;
