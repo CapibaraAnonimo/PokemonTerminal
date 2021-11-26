@@ -1,4 +1,4 @@
-package crud;
+package pokemonTerminalCrud;
 
 public class CrudPokemon {
 

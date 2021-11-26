@@ -1,4 +1,4 @@
-package datos;
+package pokemonTerminalDatos;
 
 public class PokeAtaques {
 
