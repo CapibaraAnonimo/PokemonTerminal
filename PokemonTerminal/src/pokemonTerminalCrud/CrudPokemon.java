@@ -20,4 +20,46 @@ public class CrudPokemon {
 		//get.defensaEspecial + defensaEspecial;
 	}
 
+	private Pokemon pokemon;
+	
+	//Maylor procedo a crear métodos para :
+	//Actualizar la vida Método 1
+	
+	public static void actulizarVida (int vida) {
+		//get.vida + vida;
+		
+	}
+	
+	//Metodo numero 3 actualizar daño
+	public static void actualizarDa�o(int da�o) {
+		//get.daño + daño;	
+	}
+	
+	//Metodo actualizar daño especial
+	public static void actualizarDa�oEspecial (int da�oEspecial) {
+		//get.dañoEspecial + dañoEspecial;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

@@ -18,5 +18,5 @@ public class Imprimir {
 		System.out.println(menuAtaqueArriba + ataque1 + ataque2 + ataque3 + ataque4 + menuAtaqueAbajo);
 	}
 	
-	
+
 }
