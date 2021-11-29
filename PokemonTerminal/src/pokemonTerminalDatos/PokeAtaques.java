@@ -1,9 +1,11 @@
 package pokemonTerminalDatos;
 
+import pokemonTerminalModel.Movimiento;
+
 public class PokeAtaques {
 	
 	public int ataqueID[] = {};
 	
-	public String ataqueNombre[][] = {{}, {}};
+	public Movimiento ataqueNombre[] = {};
 
 }
