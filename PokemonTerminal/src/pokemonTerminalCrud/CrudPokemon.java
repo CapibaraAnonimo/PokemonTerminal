@@ -2,6 +2,7 @@ package pokemonTerminalCrud;
 
 import pokemonTerminalModel.Pokemon;
 
+
 public class CrudPokemon {
 	
 	private Pokemon pokemon;
