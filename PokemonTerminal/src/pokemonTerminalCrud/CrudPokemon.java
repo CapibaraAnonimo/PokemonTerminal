@@ -4,8 +4,9 @@ import pokemonTerminalModel.Pokemon;
 
 
 public class CrudPokemon {
+	//se crea un objeto crud el cual es CrudPokemon y esta vacío
 	
-	private Pokemon pokemon;
+	private Pokemon CrudPokemon;
 	
 	//Voy a comenzar a realizar la actualizaci�n de la defensa
 	
@@ -20,25 +21,24 @@ public class CrudPokemon {
 	public void actualizarDefensaEspecial (int defensaEspecial) {
 		//get.defensaEspecial + defensaEspecial;
 	}
-	
+	/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 	//Maylor procedo a crear métodos para :
 	//Actualizar la vida Método 1
-	
-	public void actulizarVida (int vida) {
-		
-
+	//el acVida es actualizar vida, uso un public void para que se pueda acceder a este
+	public void actulizarVida (int vida, int acVida) {
+		CrudPokemon.setVida(acVida);
 		
 	}
 	
 	//Metodo numero 3 actualizar daño
-	public void actualizarDanio(int dano) {
+	public void actualizarAtaque(int ataque, int acAtaque) {
+		CrudPokemon.setAtaque(acAtaque);
 		
-	
 	}
 	
-	//Metodo actualizar daño especial
-	public void actualizarDanioEspecial (int danioEspecial) {
-		
+	//Metodo actualizar ataqueespecial
+	public void actualizarAtaqueEspecial (int ataqueEspecial, int acAtaqueEspecial) {
+		CrudPokemon.setAtaqueEspecial(acAtaqueEspecial);
 		
 	}
 	
