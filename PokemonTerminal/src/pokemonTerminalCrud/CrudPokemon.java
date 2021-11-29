@@ -4,40 +4,40 @@ import pokemonTerminalModel.Pokemon;
 
 public class CrudPokemon {
 	
-	private Pokemon pokemenon;
+	private Pokemon pokemon;
 	
-	//Voy a comenzar a realizar la actualización de la defensa
+	//Voy a comenzar a realizar la actualizaciï¿½n de la defensa
 	
-	//Método 1: Importo el paquete Model para llamar a los atributos y poder actualizar la defensa
-	public static void actualizarDefensa (int defensa) {
+	//Mï¿½todo 1: Importo el paquete Model para llamar a los atributos y poder actualizar la defensa
+	public void actualizarDefensa (int defensa) {
 		//get.defensa + defensa;
 		
 		
 	}
 	
 	//
-	public static void actualizarDefensaEspecial (int defensaEspecial) {
+	public void actualizarDefensaEspecial (int defensaEspecial) {
 		//get.defensaEspecial + defensaEspecial;
 	}
-
-	private Pokemon pokemon;
 	
 	//Maylor procedo a crear mÃ©todos para :
 	//Actualizar la vida MÃ©todo 1
 	
-	public static void actulizarVida (int vida) {
-		//get.vida + vida;
+	public void actulizarVida (int vida) {
+		
+
 		
 	}
 	
 	//Metodo numero 3 actualizar daÃ±o
-	public static void actualizarDaño(int daño) {
-		//get.daÃ±o + daÃ±o;	
+	public void actualizarDanio(int dano) {
+		
+	
 	}
 	
 	//Metodo actualizar daÃ±o especial
-	public static void actualizarDañoEspecial (int dañoEspecial) {
-		//get.daÃ±oEspecial + daÃ±oEspecial;
+	public void actualizarDanioEspecial (int danioEspecial) {
+		
 		
 	}
 	
