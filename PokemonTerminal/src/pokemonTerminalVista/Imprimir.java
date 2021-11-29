@@ -1,6 +1,11 @@
 package pokemonTerminalVista;
 
+import pokemonTerminalCrud.CrudPokemon;
+
 public class Imprimir {
+	private CrudPokemon imprimir;
+	
+	
 	
 	 String menuAtaqueArriba = "__________________________";
 	  
@@ -17,6 +22,9 @@ public class Imprimir {
 			System.out.println(menuAtaqueArriba + "\n*" + ataque1 + "\t*" + ataque2 + "\n*" + ataque3 + "\t*"+ ataque4 + "\n" + menuAtaqueAbajo);
 			
 	}
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		
+		
 
 		
 		
