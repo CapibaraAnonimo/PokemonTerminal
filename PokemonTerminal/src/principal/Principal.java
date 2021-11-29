@@ -9,10 +9,10 @@ public class Principal {
 		//Imprimir.menuMovimiento();
 		
 	//Plantilla de como va a ser en un principio el menú de ataque
-	 String menuAtaqueArriba = "**************************";
+	 String menuAtaqueArriba = "__________________________";
 		  
 
-	 String menuAtaqueAbajo =  "**************************";
+	 String menuAtaqueAbajo =  "__________________________";
 
 	 	//Por ahora les declaro estos nombres para saber donde van cada uno en el menú
 	 String ataque1 = "Ataque1";
@@ -20,7 +20,7 @@ public class Principal {
 	 String ataque3 = "Ataque3";
 	 String ataque4 = "Ataque4";
 	 
-	 System.out.println(menuAtaqueArriba + "\n*" + ataque1 + "\n*" + ataque2 + ataque3 + ataque4 + menuAtaqueAbajo);
+	 System.out.println(menuAtaqueArriba + "\n*" + ataque1 + "\t*" + ataque2 + "\n*" + ataque3 + "\t*"+ ataque4 + "\n" + menuAtaqueAbajo);
 
 
 		

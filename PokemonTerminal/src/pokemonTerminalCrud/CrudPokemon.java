@@ -11,15 +11,14 @@ public class CrudPokemon {
 	//Voy a comenzar a realizar la actualizaciï¿½n de la defensa
 	
 	//Mï¿½todo 1: Importo el paquete Model para llamar a los atributos y poder actualizar la defensa
-	public void actualizarDefensa (int defensa) {
-		//get.defensa + defensa;
-		
-		
+	//A raízdel ejemplo de Ángel, lo llamamos con los set y get del paquete model
+	public void actualizarDefensa (int actDefensa) {
+		crudPokemon.setDefensa(crudPokemon.getDefensa() + actDefensa);
 	}
-	
-	//
-	public void actualizarDefensaEspecial (int defensaEspecial) {
-		//get.defensaEspecial + defensaEspecial;
+
+	//Continuo con la actualización de la defensa especial, que es basicamente lo mismo que el anterior a la hora de llamar los atributos
+	public void actualizarDefensaEspecial (int actDefensaEspecial) {
+		crudPokemon.setDefensaEspecial(crudPokemon.getDefensaEspecial() + actDefensaEspecial)
 	}
 	/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 	//Maylor procedo a crear mÃ©todos para :
