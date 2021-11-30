@@ -108,5 +108,9 @@ public class Movimiento {
 	public int getCondicionEstado() {
 		return condicionEstado;
 	}
+	
+	public int getProbEstado() {
+		return probEstado;
+	}
 
 }
