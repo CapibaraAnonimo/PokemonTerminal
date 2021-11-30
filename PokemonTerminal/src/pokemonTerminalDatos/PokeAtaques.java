@@ -6,7 +6,7 @@ public class PokeAtaques {
 	
 	public int ataqueID[] = {};
 	
-	public Movimiento ataqueNombre[] = {
+	public Movimiento ataques[] = {
 									//id, nombre, tipo, poder, precision, pp, categoria
 										new Movimiento(22, "Látigo Cepa", 11, 45, 100, 25, 0),
 										new Movimiento(33, "Placaje", 0, 35, 100, 35, 0),
@@ -16,5 +16,17 @@ public class PokeAtaques {
 										new Movimiento(52, "Ascuas", 9, 40, 100, 25, 14, 0, 10),
 										
 																								};
+	
+	public Movimiento getMovimiento(int id)
+	{
+		for(int i = 0; i < ataques.length; i++)
+		{
+			if(ataques[i].getId() == id)
+			{
+				return ataques[i];
+			}
+		}
+		return null;
+	}
 
 }
