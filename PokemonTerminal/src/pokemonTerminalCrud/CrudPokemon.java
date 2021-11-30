@@ -18,7 +18,7 @@ public class CrudPokemon {
 
 	//Continuo con la actualización de la defensa especial, que es basicamente lo mismo que el anterior a la hora de llamar los atributos
 	public void actualizarDefensaEspecial (int actDefensaEspecial) {
-		crudPokemon.setDefensaEspecial(crudPokemon.getDefensaEspecial() + actDefensaEspecial)
+		crudPokemon.setDefensaEspecial(crudPokemon.getDefensaEspecial() + actDefensaEspecial);
 	}
 	/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 	//Maylor procedo a crear mÃ©todos para :
