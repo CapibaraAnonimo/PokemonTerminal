@@ -8,7 +8,7 @@ public class Movimiento {
 	private int poder = 0; // veneno, tierra, roca, bicho, fantasma, acero, fuego, agua, planta, electrico,
 	private int precision = 0; // psiquico, hielo, dragon, oscuro, hada.
 	private int pp = 0;  //Cantidad de veces que se puede usar el movimiento
-	private int categoria = 0; // fisico 0, especial 1, estado 2;
+	private int categoria = 0; // físico 1, especial 2, estado 3, condiciónEstado 4;
 	private int ataque = 0;
 	private int ataqueEsp = 0;
 	private int defensa = 0;
