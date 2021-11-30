@@ -15,7 +15,7 @@ public class Movimiento {
 	int defensaEsp = 0;
 	
 	public Movimiento(int id, String nombre, int tipo, int poder, int precision, int pp, int categoria, 
-			int ataque, int ataqueEsp, int defensa, int defensaEsp) {
+		int ataque, int ataqueEsp, int defensa, int defensaEsp) {
 		this.id = id;
 		this.nombre = nombre;
 		this.tipo = tipo;
