@@ -6,8 +6,6 @@ public class Pokemon {
 	
 	private int id;
 	
-
-	
 	private int tipo;
 	
 	private int vida;
@@ -18,6 +16,10 @@ public class Pokemon {
 	private int velocidad;
 	private int precision;
 	private int evasion;
+	private Movimiento mv1 = null;
+	private Movimiento mv2 = null;
+	private Movimiento mv3 = null;
+	private Movimiento mv4 = null;
 	
 	
 	public Pokemon(int id, int tipo, int vida, int ataque, int defensa, int defensaEspecial, int ataqueEspecial,
