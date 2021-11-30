@@ -4,9 +4,9 @@ public class Movimiento {
 	
 	int id = 0;
 	String nombre = new String();
-	byte tipo = 0;
-	int poder = 0;
-	int precision = 0;
+	byte tipo = 0;      //Los tipos empezaran por 0 y el orden de tipos será normal, lucha, volador,
+	int poder = 0;      //veneno, tierra, roca, bicho, fantasma, acero, fuego, agua, planta, electrico,
+	int precision = 0;  //psiquico, hielo, dragon, oscuro, hada.
 	int pp = 0;
 	byte categoria = 0;
 	
