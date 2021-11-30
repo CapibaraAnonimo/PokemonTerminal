@@ -1,9 +1,9 @@
 package pokemonTerminalVista;
 
-import pokemonTerminalCrud.CrudPokemon;
+import pokemonTerminalModel.Pokemon;
 
 public class Imprimir {
-	private CrudPokemon imprimir;
+	private Pokemon imprimir;
 	
 	
 	
@@ -23,7 +23,11 @@ public class Imprimir {
 			
 	}
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-		
+	//PARA IMPRIMIR LA VIDA HE USADO EL PRINTLN Y imprimiré lo que hay en getVida de la clase Model ya que de la clase CRUD no me deja hacerlo.
+		public void ImprimirVida() {
+		System.out.println(imprimir.getVida());
+	}
+	
 		
 
 		
