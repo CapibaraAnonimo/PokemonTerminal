@@ -20,7 +20,11 @@ public class Principal {
 	 String ataque3 = "Ataque3";
 	 String ataque4 = "Ataque4";
 	 
+<<<<<<< HEAD
+	 System.out.println(menuAtaqueArriba + "\n*" + ataque1 + "\t*" + ataque2 + "\n*" + ataque3 + "\t*"ataque4 + menuAtaqueAbajo);
+=======
 	 System.out.println(menuAtaqueArriba + "\n*" + ataque1 + "\t*" + ataque2 + "\n*" + ataque3 + "\t*"+ ataque4 + "\n" + menuAtaqueAbajo);
+>>>>>>> refs/remotes/origin/master
 
 
 		
