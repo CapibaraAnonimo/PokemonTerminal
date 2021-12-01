@@ -10,6 +10,12 @@ public class CrudPokemon {
 	private Pokemon crudPokemon;
 	private Movimiento crudMovimiento;
 	
+	
+	public CrudPokemon(Pokemon crudPokemon) {
+		this.crudPokemon = crudPokemon;
+	}
+	
+	
 	//Voy a comenzar a realizar la actualizaci�n de la defensa
 	
 	//M�todo 1: Importo el paquete Model para llamar a los atributos y poder actualizar la defensa
