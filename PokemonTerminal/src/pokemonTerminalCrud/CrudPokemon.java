@@ -10,28 +10,23 @@ public class CrudPokemon {
 	private Pokemon crudPokemon;
 	private Movimiento crudMovimiento;
 	
-	//Voy a comenzar a realizar la actualizaci�n de la defensa
-	
-	//M�todo 1: Importo el paquete Model para llamar a los atributos y poder actualizar la defensa
-	//A ra�zdel ejemplo de �ngel, lo llamamos con los set y get del paquete model
+	//Metodo para actualizarDefensa
 	public void actualizarDefensa (int actDefensa) {
 		crudPokemon.setDefensa(crudPokemon.getDefensa() + actDefensa);
 	}
+	//Metodo para actualizar defensaEspecial
 
-	//Continuo con la actualizaci�n de la defensa especial, que es basicamente lo mismo que el anterior a la hora de llamar los atributos
 	public void actualizarDefensaEspecial (int actDefensaEspecial) {
 		crudPokemon.setDefensaEspecial(crudPokemon.getDefensaEspecial() + actDefensaEspecial);
 	}
-	/*------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-	//Maylor procedo a crear métodos para :
-	//Actualizar la vida Método 1
-	//el acVida es actualizar vida, uso un public void para que se pueda acceder a este
+
+	//Metodo para actualizar vida
 	public void actulizarVida (int acVida) {
 		crudPokemon.setVida(crudPokemon.getVida() + acVida);
 		
 	}
 	
-	//Metodo numero 3 actualizar daño
+	//Metodo actualizar Ataque
 	public void actualizarAtaque(int acAtaque) {
 		crudPokemon.setAtaque(crudPokemon.getAtaque() + acAtaque);
 		
