@@ -7,14 +7,14 @@ public class Movimiento {
 	private int tipo = 0; // Los tipos empezaran por 0 y el orden de tipos será normal, lucha, volador,
 	private int poder = 0; // veneno, tierra, roca, bicho, fantasma, acero, fuego, agua, planta, electrico,
 	private int precision = 0; // psiquico, hielo, dragon, oscuro, hada.
-	private int pp = 0;  //Cantidad de veces que se puede usar el movimiento
+	private int pp = 0; // Cantidad de veces que se puede usar el movimiento
 	private int categoria = 0; // físico 1, especial 2, estado 3, condiciónEstado 4;
 	private int ataque = 0;
 	private int ataqueEsp = 0;
 	private int defensa = 0;
 	private int defensaEsp = 0;
 	private int condicionEstado = 0; // quemado 0, congelación 1, paralisis 2, enveneado 3, dormido 4,
-	private int probEstado = 0; 
+	private int probEstado = 0;
 
 	// Constructor para movimientos sin cambios
 	public Movimiento(int id, String nombre, int tipo, int poder, int precision, int pp, int categoria) {
@@ -56,7 +56,7 @@ public class Movimiento {
 		this.condicionEstado = condicionEstado;
 		this.probEstado = probEstado;
 	}
-	
+
 	public int getPp() {
 		return pp;
 	}
@@ -108,7 +108,7 @@ public class Movimiento {
 	public int getCondicionEstado() {
 		return condicionEstado;
 	}
-	
+
 	public int getProbEstado() {
 		return probEstado;
 	}
