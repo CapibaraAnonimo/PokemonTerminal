@@ -14,8 +14,8 @@ public class Pokemon {
 	private int defensaEspecial;
 	private int ataqueEspecial;
 	private int velocidad;
-	private int precision;
-	private int evasion;
+	private int precision = 100;
+	private int evasion = 100;
 	private Movimiento mv1 = null;
 	private Movimiento mv2 = null;
 	private Movimiento mv3 = null;
@@ -23,7 +23,7 @@ public class Pokemon {
 	
 	
 	public Pokemon(int id, int tipo, int vida, int ataque, int defensa, int defensaEspecial, int ataqueEspecial,
-			int velocidad, int precision, int evasion) {
+			int velocidad) {
 
 		this.id = id;
 		this.tipo = tipo;
@@ -33,8 +33,6 @@ public class Pokemon {
 		this.defensaEspecial = defensaEspecial;
 		this.ataqueEspecial = ataqueEspecial;
 		this.velocidad = velocidad;
-		this.precision = precision;
-		this.evasion = evasion;
 	}
 
 

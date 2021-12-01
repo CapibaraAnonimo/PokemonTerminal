@@ -8,7 +8,6 @@ public class CrudPokemon {
 	//se crea un objeto crud el cual es CrudPokemon y esta vacío
 	
 	private Pokemon crudPokemon;
-	private Movimiento crudMovimiento;
 	
 	
 	public CrudPokemon(Pokemon crudPokemon) {
@@ -49,24 +48,9 @@ public class CrudPokemon {
 		
 	}
 	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	public Pokemon getPokemon() {
+		return crudPokemon;
+	}
 	
 	
 	
