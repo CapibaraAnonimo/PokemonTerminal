@@ -14,6 +14,7 @@ public class PokeAtaques {
 										new Movimiento(76, "Rayo Solar", 11, 120, 100, 10, 1),
 									//id, nombre, tipo, poder, precision, pp, categoria, condicion estado, prob estado 
 										new Movimiento(52, "Ascuas", 9, 40, 100, 25, 14, 0, 10),
+									//id, nombre, tipo, poder, precision, pp, categoria, ataque, ataqueEsp, defensa, defensaEsp	
 										
 																								};
 	
