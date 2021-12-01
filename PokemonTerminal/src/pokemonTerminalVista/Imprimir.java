@@ -7,20 +7,27 @@ public class Imprimir {
 	
 	private Pokemon vistaPokemon;
 	
-	 static String menuAtaqueArriba = "________________________________";
-	  
-
-	 static String menuAtaqueAbajo =  "________________________________ ";
+	private String prueba= "┌──────────────────────────────┐";
+	 
+	 private String prueba1="│";
+	 
+	 private String prueba2="│";
+	 
+	 private String prueba4="└──────────────────────────────┘";
 	
 		//Por ahora les declaro estos nombres para saber donde van cada uno en el menú
-	 static String ataque1 = "Látigo Cepa";
-	 static String ataque2 = "Hoja Afilada";
-	 static String ataque3 = "Placaje";
-	 static String ataque4 = "Rayo Solar";
+	private String ataque1 = "Látigo Cepa";
+	private String ataque2 = "Hoja Afilada";
+	private String ataque3 = "Placaje";
+	private String ataque4 = "Rayo Solar";
 	 
-		public static void menuMovimiento () {
-			System.out.println(menuAtaqueArriba + "\n*" + ataque1 + "\t*" + ataque2 + "\n*" + ataque3 + "\t*"+ ataque4 + "\n" + menuAtaqueAbajo);
+		public void  menuMovimiento (String menuAta) {
+			 System.out.println(prueba + "\n" + prueba1 + ataque4 + "\t" + ataque2  + "\n" + prueba2 + ataque3 + "\t" + ataque3 + "\n" + prueba4);
 	}
+		
+		public void pokemon (String pokemon) {
+			
+		}
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	//PARA IMPRIMIR LA VIDA HE USADO EL PRINTLN Y imprimiré lo que hay en getVida de la clase Model ya que de la clase CRUD no me deja hacerlo.
 		public void ImprimirVida() {
