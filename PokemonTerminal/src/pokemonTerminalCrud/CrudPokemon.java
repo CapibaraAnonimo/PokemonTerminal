@@ -5,10 +5,31 @@ import pokemonTerminalModel.Movimiento;
 
 
 public class CrudPokemon {
-	//se crea un objeto crud el cual es CrudPokemon y esta vacío
-	
+
+	//Vamos a inyectar los demas paquetes a nuestra clase para poder acceder a sus elementos
 	private Pokemon crudPokemon;
 	private Movimiento crudMovimiento;
+	
+	//Procedo a crear un constructor tanto para tipo de Pokemon como para los movimientos.
+	
+	public CrudPokemon () {
+		
+		
+	}
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	//Metodo para actualizarDefensa
 	public void actualizarDefensa (int actDefensa) {
@@ -43,6 +64,9 @@ public class CrudPokemon {
 		crudMovimiento.setPp(crudMovimiento.getPp() - 1);
 			
 	}
+	
+	//Metodo para que devuelva el Pokemon.
+	
 	
 	
 	
