@@ -1,13 +1,11 @@
 package pokemonTerminalModel;
 
-
 public class Pokemon {
 
-	
 	private int id;
-	
+
 	private int tipo;
-	
+
 	private int vida;
 	private int ataque;
 	private int defensa;
@@ -16,9 +14,11 @@ public class Pokemon {
 	private int velocidad;
 	private int precision = 100;
 	private int evasion = 100;
-	private Movimiento movimientos[] = new Movimiento[4];
-	
-	
+	private Movimiento movimientos[] = { new Movimiento(22, "Látigo Cepa", 11, 45, 100, 25, 0),
+			new Movimiento(22, "Látigo Cepa", 11, 45, 100, 25, 0),
+			new Movimiento(22, "Látigo Cepa", 11, 45, 100, 25, 0),
+			new Movimiento(22, "Látigo Cepa", 11, 45, 100, 25, 0) };
+
 	public Pokemon(int id, int tipo, int vida, int ataque, int defensa, int defensaEspecial, int ataqueEspecial,
 			int velocidad) {
 
@@ -32,113 +32,92 @@ public class Pokemon {
 		this.velocidad = velocidad;
 	}
 
-
 	public int getId() {
 		return id;
 	}
-
 
 	public void setId(int id) {
 		this.id = id;
 	}
 
-
 	public int getTipo() {
 		return tipo;
 	}
-
 
 	public void setTipo(int tipo) {
 		this.tipo = tipo;
 	}
 
-
 	public int getVida() {
 		return vida;
 	}
-
 
 	public void setVida(int vida) {
 		this.vida = vida;
 	}
 
-
 	public int getAtaque() {
 		return ataque;
 	}
-
 
 	public void setAtaque(int ataque) {
 		this.ataque = ataque;
 	}
 
-
 	public int getDefensa() {
 		return defensa;
 	}
-
 
 	public void setDefensa(int defensa) {
 		this.defensa = defensa;
 	}
 
-
 	public int getDefensaEspecial() {
 		return defensaEspecial;
 	}
-
 
 	public void setDefensaEspecial(int defensaEspecial) {
 		this.defensaEspecial = defensaEspecial;
 	}
 
-
 	public int getAtaqueEspecial() {
 		return ataqueEspecial;
 	}
-
 
 	public void setAtaqueEspecial(int ataqueEspecial) {
 		this.ataqueEspecial = ataqueEspecial;
 	}
 
-
 	public int getVelocidad() {
 		return velocidad;
 	}
-
 
 	public void setVelocidad(int velocidad) {
 		this.velocidad = velocidad;
 	}
 
-
 	public int getPrecision() {
 		return precision;
 	}
-
 
 	public void setPrecision(int precision) {
 		this.precision = precision;
 	}
 
-
 	public int getEvasion() {
 		return evasion;
 	}
 
-
 	public void setEvasion(int evasion) {
 		this.evasion = evasion;
 	}
-	
-	
-	
 
+	public Movimiento getMovimiento(int posicion) {
+		return movimientos[posicion];
+	}
 
+	public void setMovimiento(Movimiento mov, int posicion) {
+		this.movimientos[posicion] = mov;
+	}
 
-
-	
-	
-	
 }

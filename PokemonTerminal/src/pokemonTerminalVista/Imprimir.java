@@ -3,9 +3,6 @@ package pokemonTerminalVista;
 import pokemonTerminalModel.Pokemon;
 
 public class Imprimir {
-	private Pokemon imprimir;
-
-	private Pokemon vistaPokemon;
 
 	private String prueba = "┌──────────────────────────────┐";
 
@@ -22,8 +19,9 @@ public class Imprimir {
 	private String ataque4 = "Rayo Solar";
 
 	public void menuMovimiento(Pokemon pokemon) {
-		System.out.println(prueba + "\n" + prueba1 + ataque4 + "\t" + ataque2 + "\n" + prueba2 + ataque3 + "\t"
-				+ ataque3 + "\n" + prueba4);
+		System.out.println(prueba + "\n" + prueba1 + pokemon.getMovimiento(0).getNombre() + "\t"
+				+ pokemon.getMovimiento(1).getNombre() + "\n" + prueba2 + pokemon.getMovimiento(2).getNombre() + "\t"
+				+ pokemon.getMovimiento(3).getNombre() + "\n" + prueba4);
 	}
 
 	public void pokemon(String pokemon) {
