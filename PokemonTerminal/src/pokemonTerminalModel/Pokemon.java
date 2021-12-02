@@ -16,10 +16,7 @@ public class Pokemon {
 	private int velocidad;
 	private int precision = 100;
 	private int evasion = 100;
-	private Movimiento mv1 = null;
-	private Movimiento mv2 = null;
-	private Movimiento mv3 = null;
-	private Movimiento mv4 = null;
+	private Movimiento movimientos[] = new Movimiento[4];
 	
 	
 	public Pokemon(int id, int tipo, int vida, int ataque, int defensa, int defensaEspecial, int ataqueEspecial,
