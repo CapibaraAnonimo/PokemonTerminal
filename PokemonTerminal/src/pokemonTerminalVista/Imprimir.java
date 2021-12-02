@@ -23,7 +23,7 @@ public class Imprimir {
 
 	public void menuMovimiento(Pokemon pokemon) {
 		System.out.println(prueba + "\n" + prueba1 + ataque4 + "\t" + ataque2 + "\n" + prueba2 + ataque3 + "\t"
-				+ ataque3 + "\n" + prueba4);
+				+ ataque1 + "\n" + prueba4);
 	}
 
 	public void pokemon(String pokemon) {
@@ -33,8 +33,9 @@ public class Imprimir {
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// PARA IMPRIMIR LA VIDA HE USADO EL PRINTLN Y imprimiré lo que hay en getVida
 	// de la clase Model ya que de la clase CRUD no me deja hacerlo.
-	public void ImprimirVida() {
+	public void imprimirVida(Pokemon imprimir) {
 		System.out.println(imprimir.getVida());
 	}
+	
 
 }
