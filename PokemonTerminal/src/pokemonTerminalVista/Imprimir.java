@@ -6,6 +6,8 @@ public class Imprimir {
 	private Pokemon imprimir;
 	
 	private Pokemon vistaPokemon;
+	private String vida = "HP: ♥♥♥♥♥♥♥♥♥♥";
+	
 	
 	private String prueba= "┌──────────────────────────────┐";
 	 
@@ -31,6 +33,7 @@ public class Imprimir {
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	//PARA IMPRIMIR LA VIDA HE USADO EL PRINTLN Y imprimiré lo que hay en getVida de la clase Model ya que de la clase CRUD no me deja hacerlo.
 		public void ImprimirVida() {
+			System.out.println(vida);
 		System.out.println(imprimir.getVida());
 	}
 	
