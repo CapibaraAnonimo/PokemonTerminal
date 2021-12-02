@@ -15,6 +15,9 @@ public class Principal {
 		Imprimir imprimirMenuAtac;
 		//Imprimir.menuMovimiento();
 		
+		//Un boceto de la vida, que consta de 10 corazones
+	 String vida = "HP: ♥♥♥♥♥♥♥♥♥♥";
+		
 	//Plantilla de como va a ser en un principio el menú de ataque
 	 
 	 String prueba= "┌──────────────────────────────┐";
@@ -35,8 +38,7 @@ public class Principal {
 	 
 		 System.out.println(prueba + "\n" + prueba1 + ataque1 + "\t" + ataque2 + "\n" + prueba2 + ataque1 + "\t" + ataque3 + "\n" + prueba4);
 		 
-		 
-		 
+		 System.out.println(vida);
 		 
 	 }
 

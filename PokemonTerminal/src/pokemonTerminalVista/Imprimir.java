@@ -3,6 +3,26 @@ package pokemonTerminalVista;
 import pokemonTerminalModel.Pokemon;
 
 public class Imprimir {
+<<<<<<< HEAD
+=======
+	private Pokemon imprimir;
+
+	private Pokemon vistaPokemon;
+<<<<<<< HEAD
+	private String vida = "HP: ♥♥♥♥♥♥♥♥♥♥";
+	
+	
+	private String prueba= "┌──────────────────────────────┐";
+	 
+	 private String prueba1="│";
+	 
+	 private String prueba2="│";
+	 
+	 private String prueba4="└──────────────────────────────┘";
+	
+		//Por ahora les declaro estos nombres para saber donde van cada uno en el menú
+=======
+>>>>>>> be8114a64b2514271085e69aeac3b797517f06d7
 
 	private String prueba = "┌──────────────────────────────┐";
 
@@ -13,6 +33,7 @@ public class Imprimir {
 	private String prueba4 = "└──────────────────────────────┘";
 
 	// Por ahora les declaro estos nombres para saber donde van cada uno en el menú
+>>>>>>> 49759438c6e160cda4a6962e31d9a9075ea42695
 	private String ataque1 = "Látigo Cepa";
 	private String ataque2 = "Hoja Afilada";
 	private String ataque3 = "Placaje";
