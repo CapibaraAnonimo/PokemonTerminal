@@ -17,7 +17,7 @@ public class Partida {
 		
 		do
 		{
-			imprimir.menuMovimiento();
+			imprimir.menuMovimiento(null);
 			aux1 = Leer.datoInt();
 			if(turno == 0)
 			{
