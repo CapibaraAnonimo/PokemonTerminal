@@ -19,11 +19,9 @@ public class Imprimir {
 	private String ataque4 = "Rayo Solar";
 
 	public void menuMovimiento(Pokemon pokemon) {
-
 		System.out.println(prueba + "\n" + prueba1 + pokemon.getMovimiento(0).getNombre() + "\t"
 				+ pokemon.getMovimiento(1).getNombre() + "\n" + prueba2 + pokemon.getMovimiento(2).getNombre() + "\t"
 				+ pokemon.getMovimiento(3).getNombre() + "\n" + prueba4);
-
 	}
 
 	public void pokemon(String pokemon) {
@@ -33,9 +31,8 @@ public class Imprimir {
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// PARA IMPRIMIR LA VIDA HE USADO EL PRINTLN Y imprimiré lo que hay en getVida
 	// de la clase Model ya que de la clase CRUD no me deja hacerlo.
-	public void imprimirVida(Pokemon imprimir) {
+	public void ImprimirVida() {
 		System.out.println(imprimir.getVida());
 	}
-	
 
 }

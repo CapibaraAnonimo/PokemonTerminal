@@ -21,6 +21,7 @@ public class Partida {
 		{
 			imprimir.ImprimirVida();
 			imprimir.menuMovimiento(poke[turno].getPokemon());
+			imprimir.menuMovimiento(null);
 			aux1 = Leer.datoInt();
 			if(turno == 0)
 			{
