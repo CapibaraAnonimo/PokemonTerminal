@@ -5,7 +5,7 @@ import pokemonTerminalModel.Pokemon;
 
 public class CrudPokemon {
 	//se "inyecta la clase Pokemon para acceder a los atributos de la clase Pokemon"
-	
+	//crudPokemon es el objeto
 	private Pokemon crudPokemon;
 	
 	//Se crea el constructor pokemon para poder igualar
@@ -37,6 +37,7 @@ public class CrudPokemon {
 		
 	}
 	
+	//metodo para devolver el objeto crudPokemon
 	public Pokemon getPokemon() {
 		return crudPokemon;
 	}
