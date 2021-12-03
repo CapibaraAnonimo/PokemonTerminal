@@ -13,7 +13,16 @@ public class CrudMovimientos {
 	//metodo para actualizar los movimientos 
 	public void actualizarMovimiento () {
 		crudMovimiento.setPp(crudMovimiento.getPp() - 1);
+<<<<<<< HEAD
 			
+=======
+	}
+	
+	//devuelve el objeto de esta clase 
+	
+	public Movimiento getMovimiento () {
+		return crudMovimiento;
+>>>>>>> f482b46444dbfb1c986500993c912f65fe48d8b6
 	}
 
 	
