@@ -9,6 +9,7 @@ public class Pokemon {
 	private int tipo;
 
 	private int vida;
+	private int vida0;
 	private int ataque;
 	private int defensa;
 	private int defensaEspecial;
@@ -26,6 +27,7 @@ public class Pokemon {
 
 		this.id = id;
 		this.nombre = nombre;
+		this.vida0=vida;
 		this.tipo = tipo;
 		this.vida = vida;
 		this.ataque = ataque;
@@ -38,7 +40,7 @@ public class Pokemon {
 	public int getId() {
 		return id;
 	}
-
+	
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -49,6 +51,10 @@ public class Pokemon {
 	
 	public int getNivel() {
 		return nivel;
+	}
+		
+	public int getVida0() {
+		return vida0;
 	}
 
 	public int getTipo() {
