@@ -7,11 +7,7 @@ public class CrudPokemon {
 	//se "inyecta la clase Pokemon para acceder a los atributos de la clase Pokemon"
 	
 	private Pokemon crudPokemon;
-<<<<<<< HEAD
-			
-=======
 	
->>>>>>> c28d2e5b5fa0c60396b57f73a2fd1be1062daedd
 	//Se crea el constructor pokemon para poder igualar
 	public CrudPokemon(Pokemon crudPokemon) {
 		this.crudPokemon = crudPokemon;
