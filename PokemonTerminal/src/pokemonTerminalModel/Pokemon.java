@@ -3,6 +3,8 @@ package pokemonTerminalModel;
 public class Pokemon {
 
 	private int id;
+	private String nombre;
+	private int nivel = 50;
 
 	private int tipo;
 
@@ -19,10 +21,11 @@ public class Pokemon {
 			new Movimiento(22, "Látigo Cepa", 11, 45, 100, 25, 0),
 			new Movimiento(22, "Látigo Cepa", 11, 45, 100, 25, 0) };
 
-	public Pokemon(int id, int tipo, int vida, int ataque, int defensa, int defensaEspecial, int ataqueEspecial,
+	public Pokemon(int id, String nombre, int tipo, int vida, int ataque, int defensa, int defensaEspecial, int ataqueEspecial,
 			int velocidad) {
 
 		this.id = id;
+		this.nombre = nombre;
 		this.tipo = tipo;
 		this.vida = vida;
 		this.ataque = ataque;
@@ -38,6 +41,14 @@ public class Pokemon {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+	
+	public String getNombre() {
+		return nombre;
+	}
+	
+	public int getNivel() {
+		return nivel;
 	}
 
 	public int getTipo() {
