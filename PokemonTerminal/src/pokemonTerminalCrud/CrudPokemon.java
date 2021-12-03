@@ -4,20 +4,10 @@ import pokemonTerminalModel.Pokemon;
 
 
 public class CrudPokemon {
-<<<<<<< HEAD
 	//se "inyecta la clase Pokemon para acceder a los atributos de la clase Pokemon"
-
-	//se crea un objeto crud el cual es CrudPokemon y esta vacío
 	
 	private Pokemon crudPokemon;
-	
-=======
-
-	//se crea un objeto crud el cual es CrudPokemon y esta vacío
-		
-	private Pokemon crudPokemon;	
->>>>>>> 49759438c6e160cda4a6962e31d9a9075ea42695
-	
+			
 	//Se crea el constructor pokemon para poder igualar
 	public CrudPokemon(Pokemon crudPokemon) {
 		this.crudPokemon = crudPokemon;
