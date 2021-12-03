@@ -8,9 +8,7 @@ public class Equipo {
 	private CrudPokemon pokemon[]= new CrudPokemon[6];
 	
 	
-	public Equipo(int posicion, CrudPokemon[] pokemon) {
-		super();
-		this.posicion = posicion;
+	public Equipo( CrudPokemon[] pokemon) {
 		this.pokemon = pokemon;
 	}
 
