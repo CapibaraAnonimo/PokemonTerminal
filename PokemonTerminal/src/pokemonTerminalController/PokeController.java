@@ -2,18 +2,19 @@ package pokemonTerminalController;
 
 import java.util.Random;
 
+import pokemonTerminalDatos.TablaTipos;
 import pokemonTerminalModel.Pokemon;
 
 public class PokeController {
 	
-	public static int calcularDaño(int critico, int random, int bmta, int efectividad, Pokemon atacante, int ataque, Pokemon defensor)
+	public static int calcularDaño(int efectividad, Pokemon atacante, int ataque, Pokemon defensor)
 	{
 		
-		return ((((((2*atacante.getNivel())/5)+2)*atacante.getMovimiento(ataque).getPoder()*(calcularAtaque(atacante, ataque)/calcularDefensa(atacante, ataque)))/50) *critico*random*bmta*efectividad);
+		return (int)((((((2*atacante.getNivel())/5)+2)*atacante.getMovimiento(ataque).getPoder()*(calcularAtaque(atacante, ataque)/calcularDefensa(atacante, ataque)))/50) * calcularCritico(atacante)*calcularRandom()*calcularBMTA(atacante, ataque)*calcularEfectividad(atacante, defensor));
 	}
 	
 	
-	//Te dá el ataque correspondiente a la categoria del movimiento
+	//Te devuelve el ataque correspondiente a la categoria del movimiento
 	public static int calcularAtaque(Pokemon p, int ataque)
 	{
 		if(p.getMovimiento(ataque).getCategoria() == 1)
@@ -24,7 +25,7 @@ public class PokeController {
 		}
 	}
 	
-	//Te dá la defensa correspondiente a la categoria del movimiento
+	//Te devuelve la defensa correspondiente a la categoria del movimiento
 	public static int calcularDefensa(Pokemon p, int ataque)
 	{
 		if(p.getMovimiento(ataque).getCategoria() == 1)
@@ -35,7 +36,7 @@ public class PokeController {
 		}
 	}
 	
-	//Te dá el critico dependiendo del stage del pokemon
+	//Te devuelve el critico dependiendo del stage del pokemon
 	public static double calcularCritico(Pokemon p) {
 		double critico = 1.5, base = 0;
 		Random ran = new Random(System.nanoTime());
@@ -81,5 +82,34 @@ public class PokeController {
 		
 	}
 
+	//Te devuelve el random
+	public static double calcularRandom()
+	{
+		Random ran = new Random(System.nanoTime());
+		int max = 100, min = 85;
+		double random = 0;
+		
+		random = ran.nextInt(max-min)+min;
+		
+		return random/100;
+	}
 
+	//Te devuelve el BMTA (Bonus de mismo tipo de ataque)
+	public static double calcularBMTA(Pokemon p, int ataque)
+	{
+		if(p.getTipo() == p.getMovimiento(ataque).getTipo())
+		{
+			return 1.5;
+		}else
+		{
+			return 1.0;
+		}
+	}
+	
+	//Te devuelve la bonificación de tipo
+	public static double calcularEfectividad(Pokemon atacante, Pokemon defensor)
+	{
+		return TablaTipos.getMultiplicador(atacante.getTipo(), defensor.getTipo());
+	}
+	
 }
