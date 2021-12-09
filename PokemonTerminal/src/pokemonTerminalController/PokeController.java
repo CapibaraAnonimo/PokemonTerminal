@@ -7,7 +7,7 @@ import pokemonTerminalModel.Pokemon;
 
 public class PokeController {
 	
-	public static int calcularDaño(int efectividad, Pokemon atacante, int ataque, Pokemon defensor)
+	public static int calcularDaño(Pokemon atacante, int ataque, Pokemon defensor)
 	{
 		
 		return (int)((((((2*atacante.getNivel())/5)+2)*atacante.getMovimiento(ataque).getPoder()*(calcularAtaque(atacante, ataque)/calcularDefensa(atacante, ataque)))/50) * calcularCritico(atacante)*calcularRandom()*calcularBMTA(atacante, ataque)*calcularEfectividad(atacante, defensor));

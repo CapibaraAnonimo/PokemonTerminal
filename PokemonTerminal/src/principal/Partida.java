@@ -1,5 +1,6 @@
 package principal;
 
+import pokemonTerminalController.PokeController;
 import pokemonTerminalCrud.CrudPokemon;
 import pokemonTerminalDatos.PokeAtaques;
 import pokemonTerminalDatos.PokeStats;
@@ -15,6 +16,7 @@ public class Partida {
 		CrudPokemon poke[] = {new CrudPokemon(lp.getPokemon(1)), new CrudPokemon(lp.getPokemon(1))};
 		int atacante = 0;
 		int defensor = 1;
+		int movimiento = 0;
 		int aux1 = 0;
 		Imprimir imprimir = new Imprimir();
 		
@@ -27,9 +29,9 @@ public class Partida {
 			
 			imprimir.menuMovimiento(poke[defensor].getPokemon());
 			System.out.println("\nDiga ataque deseado");
-			aux1 = Leer.datoInt();
+			movimiento = Leer.datoInt();
 			
-			
+			poke[defensor].actulizarVida(PokeController.calcularDaño(poke[atacante].getPokemon(), movimiento, poke[defensor].getPokemon())*(-1));
 			
 			if(defensor == 0)
 			{
