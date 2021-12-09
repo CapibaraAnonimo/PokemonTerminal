@@ -3,6 +3,8 @@ package pokemonTerminalModel;
 public class Pokemon {
 
 	private int id;
+	private String nombre;
+	private int nivel = 50;
 
 	private int tipo;
 
@@ -19,11 +21,13 @@ public class Pokemon {
 			new Movimiento(22, "Látigo Cepa", 11, 45, 100, 25, 0),
 			new Movimiento(22, "Látigo Cepa", 11, 45, 100, 25, 0),
 			new Movimiento(22, "Látigo Cepa", 11, 45, 100, 25, 0) };
+	private int stage = 0;
 
-	public Pokemon(int id, int tipo, int vida, int ataque, int defensa, int defensaEspecial, int ataqueEspecial,
+	public Pokemon(int id, String nombre, int tipo, int vida, int ataque, int defensa, int defensaEspecial, int ataqueEspecial,
 			int velocidad) {
 
 		this.id = id;
+		this.nombre = nombre;
 		this.vida0=vida;
 		this.tipo = tipo;
 		this.vida = vida;
@@ -42,6 +46,14 @@ public class Pokemon {
 		this.id = id;
 	}
 	
+	public String getNombre() {
+		return nombre;
+	}
+	
+	public int getNivel() {
+		return nivel;
+	}
+		
 	public int getVida0() {
 		return vida0;
 	}
@@ -124,6 +136,14 @@ public class Pokemon {
 
 	public void setMovimiento(Movimiento mov, int posicion) {
 		this.movimientos[posicion] = mov;
+	}
+	
+	public int getStage() {
+		return stage;
+	}
+	
+	public void setStage(int stage) {
+		this.stage = stage;
 	}
 
 }
