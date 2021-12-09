@@ -10,13 +10,13 @@ public class CrudEquipo {
 		this.crudEquipo = crudEquipo;
 	}
 	
-	//Continuo para relaizar el m�todo de la actualizaci�n del equipo
+	//Continuo para relaizar el método de la actualización del equipo
 	
 	public void actualizarPosicion (int actualizarPosicion) {
 		crudEquipo.setPosicion(crudEquipo.getPosicion() + actualizarPosicion);
 	}
 	
-	public void actualizarPokemon (int actualizarPokemon){
+	public void actualizarPokemon (int actualizarPokemon) {	//Que se supone que estás haciendo aquí??
 		crudEquipo.setPokemon(crudEquipo.getPokemon() + actualizarPokemon);
 	}
 	
