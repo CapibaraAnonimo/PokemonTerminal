@@ -8,40 +8,40 @@ public class CrudPokemon {
 
 	//se crea un objeto crud el cual es CrudPokemon y esta vacío
 	
-	private Pokemon crudPokemon;	
+	private Pokemon pokemon;	
 	
 	//Se crea el constructor pokemon para poder igualar
 	public CrudPokemon(Pokemon crudPokemon) {
-		this.crudPokemon = crudPokemon;
+		this.pokemon = crudPokemon;
 	}
 	
 	//METODOS PARA ACTUALIZAR
 	public void actualizarDefensa (int actDefensa) {
-		crudPokemon.setDefensa(crudPokemon.getDefensa() + actDefensa);
+		pokemon.setDefensa(pokemon.getDefensa() + actDefensa);
 	}
 
 	public void actualizarDefensaEspecial (int actDefensaEspecial) {
-		crudPokemon.setDefensaEspecial(crudPokemon.getDefensaEspecial() + actDefensaEspecial);
+		pokemon.setDefensaEspecial(pokemon.getDefensaEspecial() + actDefensaEspecial);
 	}
 
 	public void actulizarVida (int acVida) {
-		crudPokemon.setVida(crudPokemon.getVida() + acVida);
+		pokemon.setVida(pokemon.getVida() + acVida);
 		
 	}
 	
 	public void actualizarAtaque(int acAtaque) {
-		crudPokemon.setAtaque(crudPokemon.getAtaque() + acAtaque);
+		pokemon.setAtaque(pokemon.getAtaque() + acAtaque);
 		
 	}
 	
 	public void actualizarAtaqueEspecial (int acAtaqueEspecial) {
-		crudPokemon.setAtaqueEspecial(crudPokemon.getAtaqueEspecial() + acAtaqueEspecial);
+		pokemon.setAtaqueEspecial(pokemon.getAtaqueEspecial() + acAtaqueEspecial);
 		
 	}
 	
 	//metodo para devolver el objeto crudPokemon
 	public Pokemon getPokemon() {
-		return crudPokemon;
+		return pokemon;
 	}
 	
 	
