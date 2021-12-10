@@ -8,7 +8,7 @@ public class Imprimir {
 
 	private Pokemon vistaPokemon;
 
-	private String vida = "HP: ♥♥♥♥♥♥♥♥♥♥";
+	private String vida;
 
 	private String prueba = "┌──────────────────────────────┐";
 

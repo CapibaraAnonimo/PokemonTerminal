@@ -20,7 +20,7 @@ public class Partida {
 		int movimiento = 0;
 		int aux1 = 0;
 		int vida = 0;
-
+		
 		do
 		{
 			System.out.printf("Atacante(tú): " + poke[atacante].getPokemon().getNombre() + ", ");

@@ -5,7 +5,7 @@ import pokemonTerminalCrud.CrudPokemon;
 public class Equipo {
 
 	int posicion=0;
-	private CrudPokemon pokemon[]= new CrudPokemon[6];
+	private CrudPokemon pokemon []= new CrudPokemon[6];
 	
 	
 	public Equipo( CrudPokemon[] pokemon) {
