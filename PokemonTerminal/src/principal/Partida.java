@@ -13,12 +13,12 @@ public class Partida {
 	{
 		PokeStats lp = new PokeStats();
 		PokeAtaques ata = new PokeAtaques();
+		Imprimir imprimir = new Imprimir();
 		CrudPokemon poke[] = {new CrudPokemon(lp.getPokemon(1)), new CrudPokemon(lp.getPokemon(1))};
 		int atacante = 0;
 		int defensor = 1;
 		int movimiento = 0;
 		int aux1 = 0;
-		Imprimir imprimir = new Imprimir();
 		
 		do
 		{

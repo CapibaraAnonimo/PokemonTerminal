@@ -18,7 +18,7 @@ public class Pokemon {
 	private int precision = 100;
 	private int evasion = 100;
 	private Movimiento movimientos[] = { new Movimiento(22, "Látigo Cepa", 11, 45, 100, 25, 0),
-			new Movimiento(22, "Látigo Cepa", 11, 45, 100, 25, 0),
+			new Movimiento(22, "Hoja afilada", 11, 45, 100, 25, 0),
 			new Movimiento(22, "Látigo Cepa", 11, 45, 100, 25, 0),
 			new Movimiento(22, "Látigo Cepa", 11, 45, 100, 25, 0) };
 	private int stage = 0;
