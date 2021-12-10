@@ -14,7 +14,6 @@ public class CrudPokemon {
 	public CrudPokemon(Pokemon p) {
 		pokemon = new Pokemon(p.getId(), p.getNombre(), p.getTipo(), p.getVida(), p.getAtaque(),
 				p.getDefensa(), p.getDefensaEspecial(), p.getAtaqueEspecial(), p.getVelocidad());
-		//this.pokemon = crudPokemon;
 	}
 	
 	//METODOS PARA ACTUALIZAR
