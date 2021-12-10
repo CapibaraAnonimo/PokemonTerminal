@@ -10,7 +10,7 @@ public class PokeController {
 	public static int calcularDaño(Pokemon atacante, int ataque, Pokemon defensor)
 	{
 		
-		return (int)((((((2*atacante.getNivel())/5)+2)*atacante.getMovimiento(ataque).getPoder()*(calcularAtaque(atacante, ataque)/calcularDefensa(atacante, ataque)))/50) * calcularCritico(atacante)*calcularRandom()*calcularBMTA(atacante, ataque)*calcularEfectividad(atacante, defensor));
+		return (int)((((((2*atacante.getNivel())/5)+2)*atacante.getMovimiento(ataque).getPoder()*(calcularAtaque(atacante, ataque)/calcularDefensa(atacante, ataque)))/50) * calcularCritico(atacante)*calcularRandom()*calcularBMTA(atacante, ataque)*calcularEfectividad(atacante, defensor)*calcularPrecision(atacante, ataque));
 	}
 	
 	
@@ -106,10 +106,25 @@ public class PokeController {
 		}
 	}
 	
-	//Te devuelve la bonificación de tipo
+	//Te devuelve la efectividad
 	public static double calcularEfectividad(Pokemon atacante, Pokemon defensor)
 	{
 		return TablaTipos.getMultiplicador(atacante.getTipo(), defensor.getTipo());
 	}
 	
+	//Te devuelve si acierta o no
+	public static int calcularPrecision(Pokemon p, int ataque) {
+		Random ran = new Random(System.nanoTime());
+		int max = 100, min = 0;
+		double random = 0;
+		
+		random = ran.nextInt(max-min)+min;
+		if(random <= p.getMovimiento(ataque).getPrecision())
+		{
+			return 1;
+		} else
+		{
+			return 0;
+		}
+	}
 }
