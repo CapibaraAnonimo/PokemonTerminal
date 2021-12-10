@@ -37,7 +37,7 @@ public class Principal {
 	 
 	 //He creado un boceto del menú de ataque, en este caso con ataques de Pokémon de tipo planta
 	 
-		 System.out.println(prueba + "\n" + prueba1 + ataque1 + "\t" + ataque2 + "\n" + prueba2 + ataque1 + "\t" + ataque3 + "\n" + prueba4);
+		 System.out.println(prueba + "\n" + prueba1 + ataque1 + "\t" + ataque2 + "\n" + prueba2 + ataque3 + "\t" + ataque4 + "\n" + prueba4);
 		 
 		 System.out.println(vida);
 		 
