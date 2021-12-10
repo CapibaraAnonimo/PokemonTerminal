@@ -19,11 +19,7 @@ public class Partida {
 		int defensor = 1;
 		int movimiento = 0;
 		int aux1 = 0;
-<<<<<<< HEAD
-=======
 		int vida = 0;
-		Imprimir imprimir = new Imprimir();
->>>>>>> 77ad1e0c80b1a1be48655f0bea7ef6ffc34a344e
 		
 		do
 		{
