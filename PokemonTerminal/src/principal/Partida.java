@@ -18,6 +18,7 @@ public class Partida {
 		int defensor = 1;
 		int movimiento = 0;
 		int aux1 = 0;
+		int vida = 0;
 		Imprimir imprimir = new Imprimir();
 		
 		do
@@ -31,7 +32,8 @@ public class Partida {
 			System.out.println("\nDiga ataque deseado");
 			movimiento = Leer.datoInt();
 			
-			poke[defensor].actulizarVida(PokeController.calcularDaño(poke[atacante].getPokemon(), movimiento, poke[defensor].getPokemon())*(-1));
+			vida = PokeController.calcularDaño(poke[atacante].getPokemon(), movimiento, poke[defensor].getPokemon())*(-1);
+			poke[defensor].actulizarVida(vida);
 			
 			if(defensor == 0)
 			{
