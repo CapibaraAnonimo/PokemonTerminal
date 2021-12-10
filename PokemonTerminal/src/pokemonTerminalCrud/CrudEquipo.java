@@ -24,7 +24,11 @@ public class CrudEquipo {
 		this.crudEquipo = crudEquipo;
 	}
 	
+<<<<<<< HEAD
 		public CrudEquipo (Equipo pokemon1, Equipo pokemon2, Equipo pokemon3, Equipo pokemon4, Equipo pokemon5, Equipo pokemon6) {
+=======
+	public CrudEquipo (Equipo pokemon1, Equipo pokemon2, Equipo pokemon3, Equipo pokemon4, Equipo pokemon5, Equipo pokemon6) {
+>>>>>>> 77ad1e0c80b1a1be48655f0bea7ef6ffc34a344e
 		this.pokemon1 = pokemon1;
 		this.pokemon2 = pokemon2;
 		this.pokemon3 = pokemon3;
@@ -33,9 +37,12 @@ public class CrudEquipo {
 		this.pokemon6 = pokemon6;
 	}
 	
+<<<<<<< HEAD
 
 	//Continuo para relaizar el m�todo de la actualizaci�n del equipo
 
+=======
+>>>>>>> 77ad1e0c80b1a1be48655f0bea7ef6ffc34a344e
 	//Continuo para relaizar el método de la actualización del equipo
 
 	
