@@ -5,6 +5,8 @@ import pokemonTerminalCrud.CrudPokemon;
 import pokemonTerminalDatos.PokeAtaques;
 import pokemonTerminalDatos.PokeStats;
 import pokemonTerminalVista.Imprimir;
+import pokemonTerminalModel.Equipo;
+
 import utilidades.Leer;
 
 public class Partida {
@@ -14,7 +16,17 @@ public class Partida {
 		PokeStats lp = new PokeStats();
 		PokeAtaques ata = new PokeAtaques();
 		Imprimir imprimir = new Imprimir();
-		CrudPokemon poke[] = {new CrudPokemon(lp.getPokemon(1)), new CrudPokemon(lp.getPokemon(1))};
+		CrudPokemon poke[] = {
+				new CrudPokemon(lp.getPokemon(1)), 
+				new CrudPokemon(lp.getPokemon(2)), 
+				new CrudPokemon(lp.getPokemon(3)), 
+				new CrudPokemon(lp.getPokemon(4)),
+				new CrudPokemon(lp.getPokemon(5)),
+				new CrudPokemon(lp.getPokemon(6))
+				};
+		
+		Equipo equipo1 = new Equipo(poke);
+		
 		int atacante = 0;
 		int defensor = 1;
 		int movimiento = 0;
