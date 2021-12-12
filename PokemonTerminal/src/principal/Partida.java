@@ -44,7 +44,7 @@ public class Partida {
 			System.out.println("\nDiga ataque deseado");
 			movimiento = Leer.datoInt();
 			
-			vida = PokeController.calcularDaño(poke[atacante].getPokemon(), movimiento, poke[defensor].getPokemon())*(-1);
+			vida = PokeController.calcularDaño(poke[atacante].getPokemon(), movimiento-1, poke[defensor].getPokemon())*(-1);
 			poke[defensor].actulizarVida(vida);
 			
 			if(defensor == 0)
