@@ -3,28 +3,22 @@ package pokemonTerminalModel;
 public class Objetos {
 
 	int precio;
-	int curacion;
+	int tipo;//1.Curacion, 2.Revivir, 3.ataque, 4.ataqueEsp, 5.Defensa, 6.DefensaEsp, 7.Velocidad, 8.Precision
+	int accion;
+	/*int curacion;
 	int revivir;
 	int ataque;
 	int ataqueEspecial;
 	int defensa;
 	int defensaEspecial;
 	int velocidad;
-	int precision;
+	int precision;*/
 	
-	
-	public Objetos(int precio, int curacion, int revivir, int ataque, int ataqueEspecial, int defensa,
-			int defensaEspecial, int velocidad, int precision) {
-		super();
+
+	public Objetos(int precio, int tipo, int accion) {
 		this.precio = precio;
-		this.curacion = curacion;
-		this.revivir = revivir;
-		this.ataque = ataque;
-		this.ataqueEspecial = ataqueEspecial;
-		this.defensa = defensa;
-		this.defensaEspecial = defensaEspecial;
-		this.velocidad = velocidad;
-		this.precision = precision;
+		this.tipo = tipo;
+		this.accion = accion;
 	}
 
 
@@ -38,84 +32,26 @@ public class Objetos {
 	}
 
 
-	public int getCuracion() {
-		return curacion;
+	public int getTipo() {
+		return tipo;
 	}
 
 
-	public void setCuracion(int curacion) {
-		this.curacion = curacion;
+	public void setTipo(int tipo) {
+		this.tipo = tipo;
 	}
 
 
-	public int getRevivir() {
-		return revivir;
+	public int getAccion() {
+		return accion;
 	}
 
 
-	public void setRevivir(int revivir) {
-		this.revivir = revivir;
+	public void setAccion(int accion) {
+		this.accion = accion;
 	}
 
 
-	public int getAtaque() {
-		return ataque;
-	}
-
-
-	public void setAtaque(int ataque) {
-		this.ataque = ataque;
-	}
-
-
-	public int getAtaqueEspecial() {
-		return ataqueEspecial;
-	}
-
-
-	public void setAtaqueEspecial(int ataqueEspecial) {
-		this.ataqueEspecial = ataqueEspecial;
-	}
-
-
-	public int getDefensa() {
-		return defensa;
-	}
-
-
-	public void setDefensa(int defensa) {
-		this.defensa = defensa;
-	}
-
-
-	public int getDefensaEspecial() {
-		return defensaEspecial;
-	}
-
-
-	public void setDefensaEspecial(int defensaEspecial) {
-		this.defensaEspecial = defensaEspecial;
-	}
-
-
-	public int getVelocidad() {
-		return velocidad;
-	}
-
-
-	public void setVelocidad(int velocidad) {
-		this.velocidad = velocidad;
-	}
-
-
-	public int getPrecision() {
-		return precision;
-	}
-
-
-	public void setPrecision(int precision) {
-		this.precision = precision;
-	}
 	
 	
 	
