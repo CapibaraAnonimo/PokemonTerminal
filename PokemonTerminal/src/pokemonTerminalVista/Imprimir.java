@@ -10,7 +10,7 @@ public class Imprimir {
 
 	private String vida;
 
-	private String prueba = "┌──────────────────────────────┐";
+	private String prueba =  "┌──────────────────────────────┐";
 
 	private String prueba1 = "│";
 
