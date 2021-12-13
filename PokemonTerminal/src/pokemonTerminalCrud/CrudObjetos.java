@@ -23,7 +23,16 @@ public class CrudObjetos {
 	//metodos para actualizar, debido a las acciones 
 	//metodo para actualizar/ acciones que hace cada objeto
 	
-	//se debe imponer condiciones para su funcionamiento
+	//se debe imponer condiciones para su funcionamiento, contenedor general para condiciones
+	
+	
+
+	public void accionObjeto () {
+		if (objetos.getTipo() == 1) {
+			oP.setVida(objetos.getAccion() + oP.getVida());
+			
+		}
+	}
 	
 	public void accionAtaqueEspecial() {
 		oP.setAtaqueEspecial(objetos.getAccion() + oP.getAtaqueEspecial());
