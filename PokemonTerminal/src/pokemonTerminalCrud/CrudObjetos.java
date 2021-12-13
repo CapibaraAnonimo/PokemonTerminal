@@ -9,10 +9,12 @@ public class CrudObjetos {
 	
 	//constructor
 	public CrudObjetos (Objetos o) {
-		objetos = new Objetos (o.getPrecio(), o.getCuracion(), o.getRevivir(), o.getAtaque(), o.getAtaqueEspecial(), o.getDefensa(),
-				o.getDefensaEspecial(), o.getVelocidad(), o.getPrecision());
+		objetos = new Objetos (o.getPrecio(), o.getTipo(), o.getAccion());		
 		
 	}
+	
+	//metodos para actualizar, debido a las acciones 
+	
 	
 	
 	
