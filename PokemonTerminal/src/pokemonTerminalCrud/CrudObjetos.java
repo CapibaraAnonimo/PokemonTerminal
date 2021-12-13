@@ -7,9 +7,13 @@ public class CrudObjetos {
 
 	
 	private Objetos objetos;
+<<<<<<< HEAD
+	//constructor
+=======
 	private Pokemon oP;
 	
 	//constructor objeto
+>>>>>>> ddf928d8202bf1e5d35b7f96e158552141e70750
 	public CrudObjetos (Objetos o) {
 		objetos = new Objetos (o.getPrecio(), o.getTipo(), o.getAccion());		
 	}
@@ -18,6 +22,17 @@ public class CrudObjetos {
 	public CrudObjetos(Pokemon oP) {
 		oP = new Pokemon(oP.getId(), oP.getNombre(),oP.getTipo(), oP.getVida(), oP.getAtaque(),
 				oP.getDefensa(), oP.getDefensaEspecial(), oP.getAtaqueEspecial(), oP.getVelocidad());
+	}
+	
+	public CrudObjetos (Pokemon oP) {
+		oP = new Pokemon (oP.Id(), oP.getNombre(), oP.getNivel(), oP.getTipo(), oP.getVida())
+	}
+	
+	//Comienzo a realizar la actualización de la vida con objetos
+	
+	public void sumarVida () {
+		
+		
 	}
 	
 	//metodos para actualizar, debido a las acciones 
