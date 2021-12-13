@@ -22,9 +22,10 @@ public class Pokemon {
 			new Movimiento(22, "Látigo Cepa", 11, 45, 100, 25, 0),
 			new Movimiento(22, "Látigo Cepa", 11, 45, 100, 25, 0) };
 	private int stage = 0;
+	private String sprite[];
 
 	public Pokemon(int id, String nombre, int tipo, int vida, int ataque, int defensa, int defensaEspecial, int ataqueEspecial,
-			int velocidad) {
+			int velocidad, String sprite[]) {
 
 		this.id = id;
 		this.nombre = nombre;
@@ -36,6 +37,7 @@ public class Pokemon {
 		this.defensaEspecial = defensaEspecial;
 		this.ataqueEspecial = ataqueEspecial;
 		this.velocidad = velocidad;
+		this.sprite = sprite;
 	}
 
 	public int getId() {
@@ -144,6 +146,14 @@ public class Pokemon {
 	
 	public void setStage(int stage) {
 		this.stage = stage;
+	}
+	
+	public String[] getSprite() {
+		return sprite;
+	}
+	
+	public String toString() {
+		return sprite;
 	}
 
 }

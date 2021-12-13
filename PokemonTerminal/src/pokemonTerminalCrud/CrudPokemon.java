@@ -13,7 +13,7 @@ public class CrudPokemon {
 	//Se crea el constructor pokemon para poder igualar
 	public CrudPokemon(Pokemon p) {
 		pokemon = new Pokemon(p.getId(), p.getNombre(), p.getTipo(), p.getVida(), p.getAtaque(),
-				p.getDefensa(), p.getDefensaEspecial(), p.getAtaqueEspecial(), p.getVelocidad());
+				p.getDefensa(), p.getDefensaEspecial(), p.getAtaqueEspecial(), p.getVelocidad(), p.getSprite());
 	}
 	
 	//METODOS PARA ACTUALIZAR
