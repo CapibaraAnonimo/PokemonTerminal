@@ -7,13 +7,9 @@ public class CrudObjetos {
 
 	
 	private Objetos objetos;
-<<<<<<< HEAD
-	//constructor
-=======
 	private Pokemon oP;
 	
 	//constructor objeto
->>>>>>> ddf928d8202bf1e5d35b7f96e158552141e70750
 	public CrudObjetos (Objetos o) {
 		objetos = new Objetos (o.getPrecio(), o.getTipo(), o.getAccion());		
 	}
@@ -21,11 +17,7 @@ public class CrudObjetos {
 	//constructor para objeto pokemon
 	public CrudObjetos(Pokemon oP) {
 		oP = new Pokemon(oP.getId(), oP.getNombre(),oP.getTipo(), oP.getVida(), oP.getAtaque(),
-				oP.getDefensa(), oP.getDefensaEspecial(), oP.getAtaqueEspecial(), oP.getVelocidad());
-	}
-	
-	public CrudObjetos (Pokemon oP) {
-		oP = new Pokemon (oP.Id(), oP.getNombre(), oP.getNivel(), oP.getTipo(), oP.getVida())
+				oP.getDefensa(), oP.getDefensaEspecial(), oP.getAtaqueEspecial(), oP.getVelocidad(), oP.getSprite());
 	}
 	
 	//Comienzo a realizar la actualización de la vida con objetos
@@ -40,37 +32,27 @@ public class CrudObjetos {
 	
 	//se debe imponer condiciones para su funcionamiento, contenedor general para condiciones
 	
+	//se hace una condicion general para saber cual es el que me pide inicar su metodo
 	
-
 	public void accionObjeto () {
-		if (objetos.getTipo() == 1) {
+		//irá el de acVida poner nombre de objetoVida
+		
+		if(objetos.getTipo() == 2{
 			oP.setVida(objetos.getAccion() + oP.getVida());
+			 
 			
-		}
-	}
-	
-	public void accionAtaqueEspecial() {
-		oP.setAtaqueEspecial(objetos.getAccion() + oP.getAtaqueEspecial());
-		
-	}
-
-	public void accionDefensa() {
-		oP.setDefensa(objetos.getAccion() + oP.getDefensa());
-		
-	}
-	
-	public void accionDefensaEs() {
-		oP.setDefensaEspecial(objetos.getAccion() + oP.getDefensaEspecial());
-	}
-	
-	public void accionVelocidad () {
-		oP.setVelocidad(objetos.getAccion() + oP.getVelocidad());
-	}
-	
-	public void accionPresicion () {
-		oP.setPrecision(objetos.getAccion() + oP.getPrecision());
+		}else if (objetos.getTipo() == 3) {
+			oP.setAtaque(objetos.getAccion() + oP.getAtaque());
+			}else if (objetos.getTipo() == 4) {
+				oP.setAtaqueEspecial(objetos.getAccion() + oP.getAtaqueEspecial());
+				}else if (objetos.getTipo() == 5) {
+					oP.setDefensa(objetos.getAccion() + oP.getDefensa());
+				}
 	}
 
+
+
+	
 	
 	
 	
