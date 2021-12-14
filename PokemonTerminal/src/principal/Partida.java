@@ -36,7 +36,7 @@ public class Partida {
 				StringBuilder input = new StringBuilder();
 				input.append(poke[atacante].getPokemon().getSprite()[i]);
 				input.reverse();
-				System.out.printf(input + "\t");
+				System.out.printf(input + "\t\t\t\t");
 				System.out.printf(poke[defensor].getPokemon().getSprite()[i] + "\n");
 			}
 			System.out.printf("Atacante(tú): " + poke[atacante].getPokemon().getNombre() + ", ");
