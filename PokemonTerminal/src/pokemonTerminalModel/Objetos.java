@@ -3,7 +3,7 @@ package pokemonTerminalModel;
 public class Objetos {
 
 	int precio;
-	int tipo;//1.Curacion, 2.Revivir, 3.ataque, 4.ataqueEsp, 5.Defensa, 6.DefensaEsp, 7.Velocidad, 8.Precision
+	int tipo;//1.Curacion(Ana), 2.Revivir, 3.ataque, 4.ataqueEsp, 5.Defensa, 6.DefensaEsp(Ana), 7.Velocidad(Ana), 8.Precision(Ana)
 	int accion;
 	/*int curacion;
 	int revivir;

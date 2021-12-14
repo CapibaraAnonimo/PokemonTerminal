@@ -22,9 +22,15 @@ public class TablaTipos {
 			{ 1, 0.5, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 0.5, 0.5 },
 			{ 1, 2, 1, 0.5, 1, 1, 1, 1, 0.5, 0.5, 1, 1, 1, 1, 1, 2, 2, 1 } };
 
-	public static double getMultiplicador(int atacante, int defensor)
-	{
+	private static String tipo[] = { "Normal", "Lucha", "Volador", "Veneno", "Tierra", "Roca", "Bicho", "Fantasma",
+			"Acero", "Fuego", "Agua", "Planta", "Electrico", "Psiquico", "Hielo", "Dragon", "Sinientro", "Hada" };
+
+	public static String getTipo(int i) {
+		return tipo[i];
+	}
+
+	public static double getMultiplicador(int atacante, int defensor) {
 		return tablaTipos[atacante][defensor];
 	}
-	
+
 }
