@@ -25,72 +25,23 @@ public class CrudObjetos {
 	//se debe imponer condiciones para su funcionamiento, contenedor general para condiciones
 		
 	public void accionObjeto () {
-		
-<<<<<<< HEAD
 		if(objetos.getTipo() == 1) {
 			oP.setVida(objetos.getTipo() + oP.getVida());
-	
-			}else if(objetos.getTipo() == 2){
+			
+		}else if(objetos.getTipo() == 2){
 			oP.setVida(objetos.getAccion() + oP.getVida());
-			 
-			
-				}else if (objetos.getTipo() == 3) {
-					oP.setAtaque(objetos.getAccion() + oP.getAtaque());
-			
-					}else if (objetos.getTipo() == 4) {
-				
-						oP.setAtaqueEspecial(objetos.getAccion() + oP.getAtaqueEspecial());
-				
-						}else if (objetos.getTipo() == 5) {
-							oP.setDefensa(objetos.getAccion() + oP.getDefensa());
-					
-							}else if (objetos.getTipo() == 6) {
-								oP.setDefensa(objetos.getTipo() + oP.getDefensa());
-						
-								}else if (objetos.getTipo() == 7) {
-									oP.setVelocidad(objetos.getTipo() + oP.getVelocidad());
-									
-									}else if (objetos.getTipo() == 8) {
-										oP.setPrecision(objetos.getTipo() + oP.getPrecision());
-									}
-=======
-		if(objetos.getTipo() == 2 && oP.getVida() == 0 ){
-			oP.setVida(oP.getVida0() / 2);
-			 			
-		}else if (objetos.getTipo() == 3) {
-			oP.setAtaque(objetos.getAccion() + oP.getAtaque());
-			}else if (objetos.getTipo() == 4) {
-				oP.setAtaqueEspecial(objetos.getAccion() + oP.getAtaqueEspecial());
-				}else if (objetos.getTipo() == 5) {
-					oP.setDefensa(objetos.getAccion() + oP.getDefensa());
-				}
->>>>>>> 0a50de41a970ff7f548e9b56bda399352b0e8406
-	}
-
-
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+			}else if (objetos.getTipo() == 3) {
+				oP.setAtaque(objetos.getAccion() + oP.getAtaque());
+				}else if (objetos.getTipo() == 4) {
+					oP.setAtaqueEspecial(objetos.getAccion() + oP.getAtaqueEspecial());
+					}else if (objetos.getTipo() == 5) {
+						oP.setDefensa(objetos.getAccion() + oP.getDefensa());
+						}else if (objetos.getTipo() == 6) {
+							oP.setDefensa(objetos.getTipo() + oP.getDefensa());
+							}else if (objetos.getTipo() == 7) {
+								oP.setVelocidad(objetos.getTipo() + oP.getVelocidad());
+								}else if (objetos.getTipo() == 8) {
+									oP.setPrecision(objetos.getTipo() + oP.getPrecision());
+								}
+	}	
 }
