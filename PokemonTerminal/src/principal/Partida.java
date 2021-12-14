@@ -44,7 +44,8 @@ public class Partida {
 			imprimir.imprimirVidaDibujo(poke [atacante].getPokemon());
 			System.out.printf("\nDefensor: " + poke[defensor].getPokemon().getNombre() + ", ");
 			imprimir.imprimirVida(poke[defensor].getPokemon());
-			
+			imprimir.imprimirVidaDibujo(poke [defensor].getPokemon());
+			System.out.println("");
 			imprimir.menuMovimiento(poke[defensor].getPokemon());
 			do 
 			{
