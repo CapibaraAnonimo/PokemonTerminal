@@ -3,6 +3,10 @@ package pokemonTerminalModel;
 public class Tienda {
 	
 
-	private Objetos[] objetoLista=new Objetos[8];
+	private Objetos[] objetoLista=new Objetos[10];
+	
+	
+
+	
 	
 }

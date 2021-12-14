@@ -37,7 +37,7 @@ public class CrudObjetos {
 	public void accionObjeto () {
 		//irá el de acVida poner nombre de objetoVida
 		
-		if(objetos.getTipo() == 2{
+		if(objetos.getTipo() == 2){
 			oP.setVida(objetos.getAccion() + oP.getVida());
 			 
 			
