@@ -153,7 +153,16 @@ public class Pokemon {
 	}
 	
 	public String toString() {
-		return sprite;
+		return "ID: " + id +"\n" +
+			   "Nombre: " + nombre + "\n" +
+			   "Nivel: " + nivel + "\n" +
+			   "Tipo: " + getTipo(tipo) + "\n" +
+			   "Vida: " + vida0 + "\n" +
+			   "Ataque: " + ataque + "\t\tAtaque Especial: " + ataqueEspecial + "\n" +
+			   "Defensa: " + defensa + "\t\tDefensa Especial: " + defensaEspecial + "\n" +
+			   "Velocidad: " + velocidad + "\n" +
+			   "Precisión: " + precision + "\n" +
+			   "Evasión: " + evasion + "\n";
 	}
 
 }
