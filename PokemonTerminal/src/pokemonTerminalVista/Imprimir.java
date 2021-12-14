@@ -42,5 +42,9 @@ public class Imprimir {
 	public void imprimirVida(Pokemon imprimir) {
 		System.out.println(imprimir.getVida());
 	}
+	public void imprimirVidaDibujo (Pokemon imprimir) {
+		for (int i=0;  i < imprimir.getVida() / 3; i++)
+		System.out.print("█");
+	}
 
 }
