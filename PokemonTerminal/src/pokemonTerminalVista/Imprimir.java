@@ -19,10 +19,6 @@ public class Imprimir {
 	private String prueba4 = "└──────────────────────────────┘";
 
 	// Por ahora les declaro estos nombres para saber donde van cada uno en el menú
-	private String ataque1 = "Látigo Cepa";
-	private String ataque2 = "Hoja Afilada";
-	private String ataque3 = "Placaje";
-	private String ataque4 = "Rayo Solar";
 
 	public void menuMovimiento(Pokemon pokemon) {
 
@@ -51,6 +47,17 @@ public class Imprimir {
 					System.out.print("░");
 				}
 			}	
-	}	
+	}
+	
+	public void imprimirSprites(Pokemon p1, Pokemon p2) {
+		for(int i = 0; i < p1.getSprite().length; i++)
+		{
+			StringBuilder input = new StringBuilder();
+			input.append(p1.getSprite()[i]);
+			input.reverse();
+			System.out.printf(input + "\t\t\t\t");
+			System.out.printf(p2.getSprite()[i] + "\n");
+		}
+	}
 
 }
