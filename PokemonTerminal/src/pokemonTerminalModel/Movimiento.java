@@ -13,7 +13,7 @@ public class Movimiento {
 	private int ataqueEsp = 0;
 	private int defensa = 0;
 	private int defensaEsp = 0;
-	private int condicionEstado = 0; // quemado 0, congelaci�n 1, paralisis 2, enveneado 3, dormido 4,
+	private int condicionEstado = 0; // quemado 0, congelación 1, paralisis 2, enveneado 3, dormido 4,
 	private int probEstado = 0;
 
 	// Constructor para movimientos sin cambios
@@ -43,7 +43,7 @@ public class Movimiento {
 		this.defensaEsp = defensaEsp;
 	}
 
-	// Constructor para movimientos que modifican la condici�n de estado
+	// Constructor para movimientos que modifican la condición de estado
 	public Movimiento(int id, String nombre, int tipo, int poder, int precision, int pp, int categoria,
 			int condicionEstado, int probEstado) {
 		this.id = id;

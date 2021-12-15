@@ -1,4 +1,4 @@
-1package pokemonTerminalDatos;
+package pokemonTerminalDatos;
 
 import pokemonTerminalModel.Pokemon;
 

@@ -18,7 +18,7 @@ public class Partida {
 		Imprimir imprimir = new Imprimir();
 		CrudPokemon poke[] = {
 				new CrudPokemon(lp.getPokemon(1)), 
-				new CrudPokemon(lp.getPokemon(1))};
+				new CrudPokemon(lp.getPokemon(7))};
 		
 		Equipo equipo1 = new Equipo(poke);
 		
