@@ -4,12 +4,6 @@ import pokemonTerminalModel.Pokemon;
 
 public class Imprimir {
 
-	private Pokemon imprimir;
-
-	private Pokemon vistaPokemon;
-
-	private String vida;
-
 	private String prueba =  "┌──────────────────────────────┐";
 
 	private String prueba1 = "│";
@@ -44,9 +38,9 @@ public class Imprimir {
 				System.out.print("█");
 			}else if (imprimir.getVida() <= 50) {
 				for (int j= 0; j < imprimir.getVida() / imprimir.getVida(); j++) {
-					System.out.print("░");
+					System.out.print("▓");
 				}
-			}	
+			}
 	}
 	
 	public void imprimirSprites(Pokemon p1, Pokemon p2) {

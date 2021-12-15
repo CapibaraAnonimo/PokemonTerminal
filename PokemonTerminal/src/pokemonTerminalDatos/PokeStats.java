@@ -84,7 +84,6 @@ public class PokeStats {
 					+ "                                                ░▓▀▀▓▓▓▓▓▓▓▓█▓▓▓▓▒        "
 					+ "                                                     ▒▀▀▀▀▀▀▀▀▀▒          "}),
 			
-			new Pokemon(7, "Squirtle", 7, 119, 74, 85, 63, 84, 63, new String[] {""}),
 			new Pokemon(7, "Squirtle", 7, 119, 74, 85, 63, 84, 63, new String[] {
 					  "                      ▒▒▓▓▓▓▓▓▓▓▓▓▓▒                                          "
 					, "                  ▒▒▓▓▒▒░░░▒▒▒▒▒▒▒▒▓▓▓▓▒                                      "
@@ -122,6 +121,7 @@ public class PokeStats {
 					, "        ░▒▓▓▓▓▓▓▓▓▓▓▓▓██▓▒              ▐▓█▓▓▓▓▓▓▓▓▓▓▓▓█▓▒                    "
 					, "          ▒▓██▓▒▒▓██▓▒                  ▐▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▒                    "
 					, "                                          ░▓▀▀▓▒░▓▀▀▓▒                        "}),
+			
 	}; 
 
 	public Pokemon getPokemon(int id)
