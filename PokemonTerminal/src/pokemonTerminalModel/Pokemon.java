@@ -1,5 +1,7 @@
 package pokemonTerminalModel;
 
+import pokemonTerminalDatos.TablaTipos;
+
 public class Pokemon {
 
 	private int id;
@@ -156,7 +158,7 @@ public class Pokemon {
 		return "ID: " + id +"\n" +
 			   "Nombre: " + nombre + "\n" +
 			   "Nivel: " + nivel + "\n" +
-			   "Tipo: " + getTipo(tipo) + "\n" +
+			   "Tipo: " + TablaTipos.getTipo(tipo) + "\n" +
 			   "Vida: " + vida0 + "\n" +
 			   "Ataque: " + ataque + "\t\tAtaque Especial: " + ataqueEspecial + "\n" +
 			   "Defensa: " + defensa + "\t\tDefensa Especial: " + defensaEspecial + "\n" +
