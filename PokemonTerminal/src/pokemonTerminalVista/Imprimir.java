@@ -19,10 +19,6 @@ public class Imprimir {
 	private String prueba4 = "└──────────────────────────────┘";
 
 	// Por ahora les declaro estos nombres para saber donde van cada uno en el menú
-	private String ataque1 = "Látigo Cepa";
-	private String ataque2 = "Hoja Afilada";
-	private String ataque3 = "Placaje";
-	private String ataque4 = "Rayo Solar";
 
 	public void menuMovimiento(Pokemon pokemon) {
 
