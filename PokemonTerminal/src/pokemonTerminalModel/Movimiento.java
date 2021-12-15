@@ -4,9 +4,9 @@ public class Movimiento {
 
 	private int id = 0;
 	private String nombre = new String();
-	private int tipo = 0; // Los tipos empezaran por 0 y el orden de tipos ser� normal, lucha, volador,
-	private int poder = 0; // veneno, tierra, roca, bicho, fantasma, acero, fuego, agua, planta, electrico,
-	private int precision = 0; // psiquico, hielo, dragon, oscuro, hada.
+	private int tipo = 0; // Los tipos empezaran por 0 y el orden de tipos ser  0.normal , 1.lucha , 2.volador ,
+	private int poder = 0; // 3.veneno , 4.tierra  , 5.roca , 6.bicho , 7.fantasma , 8.acero , 9.fuego , 10.agua , 11.planta , 12.electrico ,
+	private int precision = 0; // 13.psiquico , 14.hielo , 15.dragon , 16.oscuro , 17.hada .
 	private int pp = 0; // Cantidad de veces que se puede usar el movimiento
 	private int categoria = 0; // físico 1, especial 2, estado 3, condiciónEstado 4;
 	private int ataque = 0;

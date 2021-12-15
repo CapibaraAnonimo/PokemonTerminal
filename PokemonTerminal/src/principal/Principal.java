@@ -1,52 +1,67 @@
 package principal;
 
+import pokemonTerminalController.PokeController;
+import pokemonTerminalCrud.CrudPokemon;
+import pokemonTerminalDatos.PokeAtaques;
+import pokemonTerminalDatos.PokeStats;
 import pokemonTerminalVista.Imprimir;
+import pokemonTerminalModel.Equipo;
+
+import utilidades.Leer;
 
 public class Principal {
 
 	public static void main(String[] args) 
-	
-	
-	
-	
 	{
+		PokeStats lp = new PokeStats();
+		PokeAtaques ata = new PokeAtaques();
+		Imprimir imprimir = new Imprimir();
+		CrudPokemon poke[] = {
+				new CrudPokemon(lp.getPokemon(1)), 
+				new CrudPokemon(lp.getPokemon(1))};
 		
+		Equipo equipo1 = new Equipo(poke);
 		
-		Imprimir imprimirMenuAtac;
-		//Imprimir.menuMovimiento();
+		int atacante = 0;
+		int defensor = 1;
+		int movimiento = 0;
+		int aux1 = 0;
+		int vida = 0;
 		
-		//Un boceto de la vida, que consta de 10 corazones
-	 String vida = "HP: ♥♥♥♥♥♥♥♥♥♥";
-		
-	//Plantilla de como va a ser en un principio el menú de ataque
-	 
-	 
-	 String prueba= "┌──────────────────────────────┐";
-	 
-	 String prueba1="│";
-	 
-	 String prueba2="│";
-	 
-	 String prueba4="└──────────────────────────────┘";
-
-	 	//Por ahora les declaro estos nombres para saber donde van cada uno en el menú
-	 String ataque1 = "1.Látigo Cepa";
-	 String ataque2 = "2.Luz Solar";
-	 String ataque3 = "3.Placaje";
-	 String ataque4 = "4.Hoja Afilada";
-	 
-	 //He creado un boceto del menú de ataque, en este caso con ataques de Pokémon de tipo planta
-	 
-		 System.out.println(prueba + "\n" + prueba1 + ataque1 + "\t" + ataque2 + "\n" + prueba2 + ataque3 + "\t" + ataque4 + "\n" + prueba4);
-		 
-		 System.out.println(vida);
-		 
-	 }
-	 
-
-
-		
+		do
+		{
+			imprimir.imprimirSprites(poke[atacante].getPokemon(), poke[defensor].getPokemon());
+			
+			System.out.printf("Atacante(tú): " + poke[atacante].getPokemon().getNombre() + ", ");
+			imprimir.imprimirVida(poke[atacante].getPokemon());
+			imprimir.imprimirVidaDibujo(poke [atacante].getPokemon());
+			System.out.printf("\nDefensor: " + poke[defensor].getPokemon().getNombre() + ", ");
+			imprimir.imprimirVida(poke[defensor].getPokemon());
+			imprimir.imprimirVidaDibujo(poke [defensor].getPokemon());
+			System.out.println("");
+			imprimir.menuMovimiento(poke[defensor].getPokemon());
+			do 
+			{
+				System.out.println("\nDiga ataque deseado");
+				movimiento = Leer.datoInt()-1;
+				if(movimiento < 0 || movimiento > 3)
+					System.out.println("\nAtaque incorrecto, introduzca otro");
+			}while(movimiento < 0 || movimiento > 3);
+			
+			vida = PokeController.calcularDaño(poke[atacante].getPokemon(), movimiento, poke[defensor].getPokemon())*(-1);
+			poke[defensor].actulizarVida(vida);
+			
+			if(defensor == 0)
+			{
+				defensor = 1;
+				atacante = 0;
+				
+			}else {
+				defensor = 0;
+				atacante = 1;
+			}
+		}while(poke[0].getPokemon().getVida() > 0 && poke[1].getPokemon().getVida() > 0);
 
 	}
-	
 
+}
