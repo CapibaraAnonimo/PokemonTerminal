@@ -1,4 +1,4 @@
-1package pokemonTerminalDatos;
+package pokemonTerminalDatos;
 
 import pokemonTerminalModel.Pokemon;
 
@@ -44,7 +44,6 @@ public class PokeStats {
 					, "                       ▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒                                "
 					, "                      ░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒                                  "
 					, "                        ░▒▓▓▓▓▓▓▓▓▓▒                                    "}),
-<<<<<<< HEAD
 			new Pokemon(4, "Charmander", 4, 114, 79, 63, 72, 70, 85, new String[] {
 					  "                                      ░▒▓▓▓▓▓▓▓▓▒▒                        "
 					+ "                                  ░▒▒▓▓▒▒▒▒▒▒▒▒▒▒▓▓▓▓▒                    "
@@ -86,8 +85,6 @@ public class PokeStats {
 					+ "                                                     ▒▀▀▀▀▀▀▀▀▀▒          "}),
 			
 			new Pokemon(7, "Squirtle", 7, 119, 74, 85, 63, 84, 63, new String[] {""}),
-=======
-			new Pokemon(4, "Charmander", 4, 114, 79, 63, 72, 70, 85, new String[] {""}),
 			new Pokemon(7, "Squirtle", 7, 119, 74, 85, 63, 84, 63, new String[] {
 					  "                      ▒▒▓▓▓▓▓▓▓▓▓▓▓▒                                          "
 					, "                  ▒▒▓▓▒▒░░░▒▒▒▒▒▒▒▒▓▓▓▓▒                                      "
@@ -125,7 +122,6 @@ public class PokeStats {
 					, "        ░▒▓▓▓▓▓▓▓▓▓▓▓▓██▓▒              ▐▓█▓▓▓▓▓▓▓▓▓▓▓▓█▓▒                    "
 					, "          ▒▓██▓▒▒▓██▓▒                  ▐▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▒                    "
 					, "                                          ░▓▀▀▓▒░▓▀▀▓▒                        "}),
->>>>>>> f1857dd74667e17ff8fac1a1783b43c4ff255169
 	}; 
 
 	public Pokemon getPokemon(int id)
