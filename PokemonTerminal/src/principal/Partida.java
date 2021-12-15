@@ -18,8 +18,7 @@ public class Partida {
 		Imprimir imprimir = new Imprimir();
 		CrudPokemon poke[] = {
 				new CrudPokemon(lp.getPokemon(1)), 
-				new CrudPokemon(lp.getPokemon(1))
-				};
+				new CrudPokemon(lp.getPokemon(1))};
 		
 		Equipo equipo1 = new Equipo(poke);
 		
@@ -31,14 +30,8 @@ public class Partida {
 		
 		do
 		{
-			for(int i = 0; i < poke[atacante].getPokemon().getSprite().length; i++)
-			{
-				StringBuilder input = new StringBuilder();
-				input.append(poke[atacante].getPokemon().getSprite()[i]);
-				input.reverse();
-				System.out.printf(input + "\t\t\t\t");
-				System.out.printf(poke[defensor].getPokemon().getSprite()[i] + "\n");
-			}
+			imprimir.imprimirSprites(poke[atacante].getPokemon(), poke[defensor].getPokemon());
+			
 			System.out.printf("Atacante(tú): " + poke[atacante].getPokemon().getNombre() + ", ");
 			imprimir.imprimirVida(poke[atacante].getPokemon());
 			imprimir.imprimirVidaDibujo(poke [atacante].getPokemon());
