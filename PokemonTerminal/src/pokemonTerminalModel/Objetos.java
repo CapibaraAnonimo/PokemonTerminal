@@ -7,14 +7,6 @@ public class Objetos {
 	int precio;
 	int tipo;//1.Curacion(Ana), 2.Revivir, 3.ataque, 4.ataqueEsp, 5.Defensa, 6.DefensaEsp(Ana), 7.Velocidad(Ana), 8.Precision(Ana)
 	int accion;
-	/*int curacion;
-	int revivir;
-	int ataque;
-	int ataqueEspecial;
-	int defensa;
-	int defensaEspecial;
-	int velocidad;
-	int precision;*/
 	
 
 	public Objetos(int id, String nombre ,int precio, int tipo, int accion) {
