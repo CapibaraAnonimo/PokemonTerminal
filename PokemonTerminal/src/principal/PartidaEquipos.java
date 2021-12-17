@@ -1,9 +1,11 @@
 package principal;
 
 import pokemonTerminalCrud.CrudEquipo;
+import pokemonTerminalCrud.CrudPokemon;
 import pokemonTerminalDatos.PokeAtaques;
 import pokemonTerminalDatos.PokeStats;
 import pokemonTerminalVista.Imprimir;
+import utilidades.Leer;
 
 public class PartidaEquipos {
 
@@ -16,7 +18,17 @@ public class PartidaEquipos {
 		CrudEquipo equipos[] = new CrudEquipo[2];
 		
 		System.out.println("Jugador 1, diga su nombre o nombre de equipo");
+		equipos[0] = new CrudEquipo(Leer.dato());
 		
+		for(int i = 0; i < 6; i++)
+		{
+			for(int j = 0; j < lp.stats.length; j++) 
+			{
+				System.out.println(lp.stats[j]);
+			}
+			System.out.printf("Seleccione el pokemon ", i+1);
+			equipos[0].actualizarPokemon(new CrudPokemon(lp.getPokemon(Leer.datoInt())), i);
+		}
 
 	}
 
