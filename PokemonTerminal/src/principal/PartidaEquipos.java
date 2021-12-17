@@ -26,8 +26,13 @@ public class PartidaEquipos {
 			{
 				System.out.println(lp.stats[j]);
 			}
-			System.out.printf("Seleccione el pokemon ", i+1);
+			System.out.printf("Seleccione el pokemon ", i+1 + "\n");
 			equipos[0].actualizarPokemon(new CrudPokemon(lp.getPokemon(Leer.datoInt())), i);
+		}
+		System.out.println("Tu equipo es: \n");
+		for(int i = 0; i < equipos[0].getEquipo().getPokemons().length; i++)
+		{
+			System.out.println(equipos[0].getEquipo().getPokemons());
 		}
 
 	}
