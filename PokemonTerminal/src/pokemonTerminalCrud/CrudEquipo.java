@@ -17,6 +17,10 @@ public class CrudEquipo {
 		equipo = new Equipo(e.getPokemon(1), e.getPokemon(2), e.getPokemon(3), e.getPokemon(4), e.getPokemon(5), e.getPokemon(6));
 	}
 	
+	public Equipo getEquipo() {
+		return equipo;
+	}
+	
 	public void actualizarPokemon(CrudPokemon pokemon, int i) {
 		equipo.setPokemon(pokemon, i);
 	}
