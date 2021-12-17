@@ -11,7 +11,7 @@ public class CrudObjetos {
 	
 	//constructor objeto
 	public CrudObjetos (Objetos o) {
-		objetos = new Objetos (o.getPrecio(), o.getTipo(), o.getAccion());		
+		objetos = new Objetos (o.getId(), o.getNombre(), o.getPrecio(), o.getTipo(), o.getAccion());		
 	}
 	
 	//constructor para objeto pokemon

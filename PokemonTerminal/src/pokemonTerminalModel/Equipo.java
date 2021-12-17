@@ -4,9 +4,14 @@ import pokemonTerminalCrud.CrudPokemon;
 
 public class Equipo {
 	
+	private String nombreEquipo;
 	private int posicion = 0;
 	private CrudPokemon pokemons []= new CrudPokemon[6];
 	
+	
+	public Equipo(String nombre) {
+		nombreEquipo = nombre;
+	}
 	
 	public Equipo(CrudPokemon[] pokemon) {
 		this.pokemons = pokemon;
@@ -46,6 +51,13 @@ public class Equipo {
 		this.posicion = posicion;
 	}
 	
+	public String getNombreEquipo() {
+		return this.nombreEquipo;
+	}
+	
+	public void setNombreEquipo(String nombre) {
+		nombreEquipo = nombre;
+	}
 	
 	
 }

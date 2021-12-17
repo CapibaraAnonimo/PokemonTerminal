@@ -2,6 +2,8 @@ package pokemonTerminalModel;
 
 public class Objetos {
 
+	int id;
+	String nombre;
 	int precio;
 	int tipo;//1.Curacion(Ana), 2.Revivir, 3.ataque, 4.ataqueEsp, 5.Defensa, 6.DefensaEsp(Ana), 7.Velocidad(Ana), 8.Precision(Ana)
 	int accion;
@@ -15,11 +17,43 @@ public class Objetos {
 	int precision;*/
 	
 
-	public Objetos(int precio, int tipo, int accion) {
+	public Objetos(int id, String nombre ,int precio, int tipo, int accion) {
+		this.id= id;
+		this.nombre = nombre;
 		this.precio = precio;
 		this.tipo = tipo;
 		this.accion = accion;
 	}
+
+
+	
+	
+	public String getNombre() {
+		return nombre;
+	}
+
+
+
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+
+
+
+	public int getId() {
+		return id;
+	}
+
+
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
 
 
 	public int getPrecio() {
