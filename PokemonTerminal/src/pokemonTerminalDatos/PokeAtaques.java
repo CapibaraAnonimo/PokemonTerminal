@@ -21,7 +21,11 @@ public class PokeAtaques {
 										//Agua
 										new Movimiento(55, "Pistola Agua", 	10, 40, 100, 25, 1),
 										new Movimiento(56, "HidroBomba", 	10, 110, 80, 5, 1 ),
+										//Tierra
+										new Movimiento(89, "Terremoto", 4, 100, 100, 10, 1),
 									//id, nombre, tipo, poder, precision, pp, categoria, condicion estado, prob estado 
+										//Normal
+										new Movimiento(34, "Golpe Cuerpo",	0, 85, 100, 15, 1, 2, 30 ),
 										//Fuego
 										new Movimiento(52, "Ascuas",		9, 40, 100, 25, 14, 0, 10),
 										new Movimiento(172, "Rueda Fuego", 	9, 60, 100, 25, 1, 0, 10),
@@ -32,6 +36,8 @@ public class PokeAtaques {
 										//Normal
 										new Movimiento(14, "Danza Espada", 	0, 0, 100, 20, 0, 2 , 0, 0, 0 ),
 										new Movimiento(437, "Llueve Hojas", 11, 130, 90, 5, 1, 0, -2, 0, 0),
+										//Lucha
+										new Movimiento(370, "A Bocajarro", 1, 120, 100, 5, 1, 0, 0 ,-2,-2),
 										
 																								};
 	
