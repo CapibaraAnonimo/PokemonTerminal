@@ -83,6 +83,10 @@ public class PokeStats {
 					+ "                                              ▒▓▓▓▓▓▓▓▒▒▒▒▓▓▓▓▓▓▄░        "
 					+ "                                                ░▓▀▀▓▓▓▓▓▓▓▓█▓▓▓▓▒        "
 					+ "                                                     ▒▀▀▀▀▀▀▀▀▀▒          "}),
+<<<<<<< HEAD
+=======
+			
+>>>>>>> b342a3919a5353da66de646c63ae04ff3e6d84fb
 			new Pokemon(7, "Squirtle", 7, 119, 74, 85, 63, 84, 63, new String[] {
 					  "                      ▒▒▓▓▓▓▓▓▓▓▓▓▓▒                                          "
 					, "                  ▒▒▓▓▒▒░░░▒▒▒▒▒▒▒▒▓▓▓▓▒                                      "
@@ -120,6 +124,37 @@ public class PokeStats {
 					, "        ░▒▓▓▓▓▓▓▓▓▓▓▓▓██▓▒              ▐▓█▓▓▓▓▓▓▓▓▓▓▓▓█▓▒                    "
 					, "          ▒▓██▓▒▒▓██▓▒                  ▐▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▒                    "
 					, "                                          ░▓▀▀▓▒░▓▀▀▓▒                        "}),
+			
+			new Pokemon (3, "Venusaur", 11, 155, 112, 103, 120, 108, 100, new String [] {}),
+			new Pokemon (9, "Blastoise", 10, 154, 113, 120, 125, 94, 98, new String [] {}),
+			new Pokemon (6, "Charizard", 9, 153, 114, 98, 105, 116, 120, new String [] {} ),
+			new Pokemon (38, "Ninetales", 9, 148, 105, 95, 120, 90, 120, new String [] {}),
+			new Pokemon (448, "Lucario", 1, 145, 143, 90, 90, 121, 110, new String [] {}),
+			new Pokemon (143, "Snorlax", 0, 235, 143, 85, 130, 76, 50, new String [] {}),
+			new Pokemon (129, "MagiKarp", 10, 95, 33, 75, 40, 31, 100, new String [] {}),
+			new Pokemon (130, "Gyarados", 10, 170, 159, 99, 120, 72, 101, new String [] {}),
+			new Pokemon (257, "Blaziken", 9, 155, 154, 90, 90, 117, 100, new String [] {}),
+			new Pokemon (153, "Meganium", 11, 155, 112, 120, 120, 92, 100, new String [] {}),
+			new Pokemon (254, "Sceptile", 11, 145, 115, 85, 105, 112, 140, new String [] {}),
+			new Pokemon (395, "Empoleon", 10, 159, 116, 108, 121, 117, 80, new String  [] {}),
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 	}; 
 
 	public Pokemon getPokemon(int id)

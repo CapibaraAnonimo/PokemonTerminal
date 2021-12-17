@@ -4,12 +4,6 @@ import pokemonTerminalModel.Pokemon;
 
 public class Imprimir {
 
-	private Pokemon imprimir;
-
-	private Pokemon vistaPokemon;
-
-	private String vida;
-
 	private String prueba =  "┌──────────────────────────────┐";
 
 	private String prueba1 = "│";
@@ -44,19 +38,33 @@ public class Imprimir {
 				System.out.print("█");
 			}else if (imprimir.getVida() <= 50) {
 				for (int j= 0; j < imprimir.getVida() / imprimir.getVida(); j++) {
-					System.out.print("░");
+					System.out.print("▓");
 				}
-			}	
+			}
 	}
 	
 	public void imprimirSprites(Pokemon p1, Pokemon p2) {
-		for(int i = 0; i < p1.getSprite().length; i++)
+		for(int i = 0; i < p1.getSprite().length && i < p2.getSprite().length; i++)
 		{
-			StringBuilder input = new StringBuilder();
-			input.append(p1.getSprite()[i]);
-			input.reverse();
-			System.out.printf(input + "\t\t\t\t");
-			System.out.printf(p2.getSprite()[i] + "\n");
+			if(i < p1.getSprite().length)
+			{
+				StringBuilder input = new StringBuilder();
+				input.append(p1.getSprite()[i]);
+				input.reverse();
+				System.out.printf(input + "\t\t\t\t");
+			}else {
+				System.out.printf("                                                                              \t\t\t\t");
+			}
+			
+			if(i < p2.getSprite().length)
+			{
+				System.out.printf(p2.getSprite()[i] + "\n");
+			}else {
+				System.out.println();
+			}
+			
+			if(i >= p2.getSprite().length && i <= p1.getSprite().length)
+				i = 305;
 		}
 	}
 
