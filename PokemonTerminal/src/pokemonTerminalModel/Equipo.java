@@ -18,12 +18,12 @@ public class Equipo {
 	}
 	
 	public Equipo(CrudPokemon p1, CrudPokemon p2, CrudPokemon p3, CrudPokemon p4, CrudPokemon p5, CrudPokemon p6) {
-		pokemons[1] = p1;
-		pokemons[2] = p2;
-		pokemons[3] = p3;
-		pokemons[4] = p4;
-		pokemons[5] = p5;
-		pokemons[6] = p6;
+		pokemons[0] = p1;
+		pokemons[1] = p2;
+		pokemons[2] = p3;
+		pokemons[3] = p4;
+		pokemons[4] = p5;
+		pokemons[5] = p6;
 	}
 
 	public CrudPokemon[] getPokemons() {
