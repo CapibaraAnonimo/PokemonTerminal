@@ -22,13 +22,16 @@ public class Tienda {
 		objetoLista[7]=new CrudObjetos(obj.getObjetos(8));
 		objetoLista[8]=new CrudObjetos(obj.getObjetos(9));
 		objetoLista[9]=new CrudObjetos(obj.getObjetos(10));
-		objetoLista[10]=new CrudObjetos(obj.getObjetos(11));
-
-
-	
+		objetoLista[10]=new CrudObjetos(obj.getObjetos(11));	
 	}
 	
-
+	public CrudObjetos[] getObjetos() {
+		return objetoLista;
+	}
+	
+	public CrudObjetos getObjeto(int i) {
+		return objetoLista[i];
+	}
 	
 	
 }

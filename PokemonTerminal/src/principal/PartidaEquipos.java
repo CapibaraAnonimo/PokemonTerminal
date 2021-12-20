@@ -2,6 +2,7 @@ package principal;
 
 import pokemonTerminalCrud.CrudEquipo;
 import pokemonTerminalCrud.CrudPokemon;
+import pokemonTerminalCrud.CrudTienda;
 import pokemonTerminalDatos.PokeAtaques;
 import pokemonTerminalDatos.PokeStats;
 import pokemonTerminalVista.Imprimir;
@@ -16,6 +17,7 @@ public class PartidaEquipos {
 		Imprimir imprimir = new Imprimir();
 		
 		CrudEquipo equipos[] = new CrudEquipo[2];
+		CrudTienda tienda = new CrudTienda();
 		
 		System.out.println("Jugador 1, diga su nombre o nombre de equipo");
 		equipos[0] = new CrudEquipo(Leer.dato());
@@ -38,6 +40,10 @@ public class PartidaEquipos {
 		System.out.println("Quiere cambiar un pokemon");
 		
 		System.out.println("Tienda\n\n");
+		for(int i = 0; i <= tienda.getTienda().getObjetos().length; i++)
+		{
+			System.out.println(tienda.getTienda().getObjeto(i));
+		}
 	}
 
 }

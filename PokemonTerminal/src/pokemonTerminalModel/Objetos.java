@@ -86,7 +86,10 @@ public class Objetos {
 	}
 
 
-	
+	public String toString() {
+		return nombre + "\n" +
+		precio;
+	}
 	
 	
 	
