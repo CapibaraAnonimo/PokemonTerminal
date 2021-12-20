@@ -34,7 +34,7 @@ public class Imprimir {
 	}
 	public void imprimirVidaDibujo (Pokemon imprimir) {
 		for (int i=0;  i < imprimir.getVida() / 3; i++)
-			if (imprimir.getVida() > 60) {
+			if (imprimir.getVida() >= 60) {
 				System.out.print("█");
 			}else if (imprimir.getVida() <= 50) {
 				for (int j= 0; j < imprimir.getVida() / imprimir.getVida(); j++) {
