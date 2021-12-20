@@ -36,6 +36,8 @@ public class PartidaEquipos {
 		}
 		
 		System.out.println("Quiere cambiar un pokemon");
+		
+		System.out.println("Tienda\n\n");
 	}
 
 }
