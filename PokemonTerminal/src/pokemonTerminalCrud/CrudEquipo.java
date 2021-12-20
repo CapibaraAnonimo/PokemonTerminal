@@ -25,4 +25,8 @@ public class CrudEquipo {
 		equipo.setPokemon(pokemon, i);
 	}
 	
+	public void actualizarDinero(int i) {
+		equipo.setDinero(equipo.getDinero()+i);
+	}
+	
 }
