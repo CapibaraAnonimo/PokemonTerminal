@@ -1,6 +1,7 @@
 package principal;
 
-import pokemonTerminalController.PokeController;
+
+import pokemonTerminalController.ControllerMov;
 import pokemonTerminalCrud.CrudPokemon;
 import pokemonTerminalDatos.PokeAtaques;
 import pokemonTerminalDatos.PokeStats;
@@ -48,7 +49,7 @@ public class Partida {
 					System.out.println("\nAtaque incorrecto, introduzca otro");
 			}while(movimiento < 0 || movimiento > 3);
 			
-			vida = PokeController.calcularDaño(poke[atacante].getPokemon(), movimiento, poke[defensor].getPokemon())*(-1);
+			vida = ControllerMov.calcularDaño(poke[atacante].getPokemon(), movimiento, poke[defensor].getPokemon())*(-1);
 			poke[defensor].actulizarVida(vida);
 			
 			if(defensor == 0)

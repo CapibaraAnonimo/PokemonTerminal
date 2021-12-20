@@ -5,7 +5,7 @@ import java.util.Random;
 import pokemonTerminalDatos.TablaTipos;
 import pokemonTerminalModel.Pokemon;
 
-public class PokeController {
+public class ControllerMov {
 	
 	public static int calcularDaño(Pokemon atacante, int ataque, Pokemon defensor)
 	{
