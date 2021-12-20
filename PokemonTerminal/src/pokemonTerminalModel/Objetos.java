@@ -87,8 +87,8 @@ public class Objetos {
 
 
 	public String toString() {
-		return nombre + "\n" +
-		precio;
+		return "nombre: " + nombre + "\n" +
+		"precio: " + precio;
 	}
 	
 	

@@ -20,7 +20,9 @@ public class CrudObjetos {
 				oP.getDefensa(), oP.getDefensaEspecial(), oP.getAtaqueEspecial(), oP.getVelocidad(), oP.getSprite());
 	}
 	
-
+	public Objetos getObjeto() {
+		return objetos;
+	}
 	
 	
 	//metodos para actualizar, debido a las acciones 	

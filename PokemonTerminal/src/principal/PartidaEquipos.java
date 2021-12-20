@@ -40,9 +40,10 @@ public class PartidaEquipos {
 		System.out.println("Quiere cambiar un pokemon");
 		
 		System.out.println("Tienda\n\n");
-		for(int i = 0; i <= tienda.getTienda().getObjetos().length; i++)
+		for(int i = 0; i < tienda.getTienda().getObjetos().length; i++)
 		{
-			System.out.println(tienda.getTienda().getObjeto(i));
+			System.out.printf("Objeto %d:\n", (i+1));
+			System.out.println(tienda.getTienda().getObjeto(i).getObjeto() + "\n");
 		}
 	}
 
