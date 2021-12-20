@@ -24,6 +24,9 @@ public class CrudObjetos {
 		return objetos;
 	}
 	
+	public void actualizarCantidad(int cant) {
+		objetos.setCantidad(objetos.getCantidad()+cant);
+	}
 	
 	//metodos para actualizar, debido a las acciones 	
 	//se debe imponer condiciones para su funcionamiento, contenedor general para condiciones

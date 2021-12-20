@@ -7,7 +7,6 @@ public class PokeAtaques {
 	
 	public int ataqueID[] = {};
 	
-	private Pokemon pa;
 	
 	public Movimiento ataques[] = {
 									//id, nombre, tipo, poder, precision, pp, categoria
@@ -23,6 +22,24 @@ public class PokeAtaques {
 										new Movimiento(56, "HidroBomba", 	10, 110, 80, 5, 1 ),
 										//Tierra
 										new Movimiento(89, "Terremoto", 4, 100, 100, 10, 1),
+										//Acero
+										new Movimiento(309, "Puño Meteoro", 8, 90, 90, 10, 1),
+										new Movimiento(684, "Cuerno Certero", 8, 70, 100, 10, 1 ),
+										//Dragon
+										new Movimiento(406, "Pulso Dragón", 15, 85, 100, 10, 1),
+										new Movimiento(337, "Garra Dragon", 15, 80, 100, 15, 1),
+										//Fantasma
+										new Movimiento(421, "Garra Umbria", 7, 70, 100, 15, 1 ),
+										new Movimiento(247, "Bola Sombra", 7, 80, 100, 15, 2 ),
+										//Roca
+										new Movimiento(317, "Tumba Rocas", 5, 70, 100, 15, 1),
+										new Movimiento(444, "Roca Afilada",5, 120, 80, 5, 2),
+										//Siniestro
+										new Movimiento(44, "Mordisco",16, 70, 100, 25, 1 ),
+										new Movimiento(242, "Triturar",16, 90, 100, 15, 1 ),
+										//Volador
+										new Movimiento(143, "Ataque Aereo", 2, 140, 90, 5, 1),
+
 									//id, nombre, tipo, poder, precision, pp, categoria, condicion estado, prob estado 
 										//Normal
 										new Movimiento(34, "Golpe Cuerpo",	0, 85, 100, 15, 1, 2, 30 ),
@@ -31,6 +48,14 @@ public class PokeAtaques {
 										new Movimiento(172, "Rueda Fuego", 	9, 60, 100, 25, 1, 0, 10),
 										//Electrico	
 										new Movimiento(84, "Impactrueno", 	12, 40, 100, 30, 1, 2, 10 ),
+										new Movimiento(85, "Rayo", 			12, 90, 100, 15, 2, 2, 10),
+										//Hielo
+										new Movimiento(58, "Rayo Hielo", 14, 90, 100, 10, 2, 1, 20 ),
+										new Movimiento(8, "Puño Hielo,", 14, 75, 100, 15, 1, 1, 10),
+										//Veneno
+										new Movimiento(188, "Bomba Lodo", 3, 90, 100, 10, 2, 3, 30 ),
+										new Movimiento(482, "onda Toxica", 3, 90, 100, 10, 2, 3, 10 ),
+
 									//id, nombre, tipo, poder, precision, pp, categoria, ataque, ataqueEsp, defensa, defensaEsp
 										//Positivo para sumar estadistica, negativo para bajar
 										//Normal
@@ -38,6 +63,7 @@ public class PokeAtaques {
 										new Movimiento(437, "Llueve Hojas", 11, 130, 90, 5, 1, 0, -2, 0, 0),
 										//Lucha
 										new Movimiento(370, "A Bocajarro", 1, 120, 100, 5, 1, 0, 0 ,-2,-2),
+										//Fantasma
 										
 																								};
 	
