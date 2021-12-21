@@ -1,7 +1,6 @@
 package pokemonTerminalDatos;
 
 import pokemonTerminalCrud.CrudMovimientos;
-import pokemonTerminalModel.Movimiento;
 import pokemonTerminalModel.Pokemon;
 
 public class PokeStats {

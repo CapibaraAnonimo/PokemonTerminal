@@ -42,5 +42,6 @@ public class CrudObjetos {
 								}else if (objetos.getTipo() == 8 && p.getVida() > 0) {
 								p.setPrecision(objetos.getTipo() + p.getPrecision());
 								}
-	}	
+	}
+	
 }

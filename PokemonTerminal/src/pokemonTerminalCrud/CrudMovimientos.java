@@ -7,8 +7,7 @@ public class CrudMovimientos {
 	private Movimiento movimiento;
 
 	public CrudMovimientos(Movimiento m) {
-		movimiento = new Movimiento (m.getId(), m.getNombre(), m.getTipo(), m.getPoder(), m.getPrecision(), m.getPp(),
-				m.getCategoria(), m.getCondicionEstado(), m.getProbEstado());
+		movimiento = new Movimiento (m.getId(), m.getNombre(), m.getTipo(), m.getPoder(), m.getPrecision(), m.getPp(), m.getCategoria(), m.getCondicionEstado(), m.getProbEstado());
 	}
 	
 	 
