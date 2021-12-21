@@ -14,12 +14,7 @@ public class CrudObjetos {
 		objetos = new Objetos (o.getId(), o.getNombre(), o.getPrecio(), o.getTipo(), o.getAccion(), o.getCantidad());		
 	}
 	
-	//constructor para objeto pokemon
-	public CrudObjetos(Pokemon oP) {
-		oP = new Pokemon(oP.getId(), oP.getNombre(),oP.getTipo(), oP.getVida(), oP.getAtaque(),
-				oP.getDefensa(), oP.getDefensaEspecial(), oP.getAtaqueEspecial(), oP.getVelocidad(), oP.getSprite());
-	}
-	
+
 	public Objetos getObjeto() {
 		return objetos;
 	}

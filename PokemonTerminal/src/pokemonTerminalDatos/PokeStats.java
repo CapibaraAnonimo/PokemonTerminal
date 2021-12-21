@@ -1,11 +1,13 @@
 package pokemonTerminalDatos;
 
+import pokemonTerminalModel.Movimiento;
 import pokemonTerminalModel.Pokemon;
 
 public class PokeStats {
 	//pokede id, hp, ataque, defensa, ataque especial, defensa especial, velocidad
 	public Pokemon stats[] = {
-			new Pokemon(1, "Bulbasur", 11, 120, 75, 76, 69, 85, 65, new String[] {
+			new Pokemon(1, "Bulbasur", 11, 120, 75, 76, 69, 85, 65, new Movimiento [] {
+				new Movimiento (33, "Placaje", 0, 35, 100, 35, 1)}, new String[] {
 					  "                                                                        "
 					, "                    ░▓▓▓▓▓▓▒                                            "
 					, "                  ▒▓▓▓▓▓▓▓▓▓▓▓▓▒                                        "
