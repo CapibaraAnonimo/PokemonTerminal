@@ -10,7 +10,7 @@ public class ControllerEquipo {
 	public static void elegirEquipo(CrudEquipo equipo) {
 		PokeStats lp = new PokeStats();
 		
-		System.out.println("Jugador 1, diga su nombre o nombre de equipo");
+		System.out.println("Diga su nombre o nombre de equipo");
 		equipo = new CrudEquipo(Leer.dato());
 		
 		for(int i = 0; i < 6; i++)
