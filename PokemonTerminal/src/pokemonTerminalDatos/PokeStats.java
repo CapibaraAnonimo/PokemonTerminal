@@ -136,7 +136,7 @@ public class PokeStats {
 					, "                                          ░▓▀▀▓▒░▓▀▀▓▒                        "}),
 			
 			new Pokemon (3, "Venusaur", 11, 155, 112, 103, 120, 108, 100, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
-					new CrudMovimientos(mov.getMovimiento(11)), new CrudMovimientos(mov.getMovimiento(188)), new CrudMovimientos(mov.getMovimiento(75))}, 
+					new CrudMovimientos(mov.getMovimiento(89)), new CrudMovimientos(mov.getMovimiento(188)), new CrudMovimientos(mov.getMovimiento(75))}, 
 					new String[] {
 					  "                                                                                                                                                         "
 					, "                                                                                  ▒▒▒▒▒▒▒▒▒▒░                                                            "
