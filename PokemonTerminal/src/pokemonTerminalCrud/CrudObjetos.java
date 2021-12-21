@@ -1,20 +1,24 @@
 package pokemonTerminalCrud;
 
-import pokemonTerminalModel.Pokemon;
+import pokemonTerminalModel.Movimiento;
 import pokemonTerminalModel.Objetos;
 
 public class CrudObjetos {
 
 	
 	private Objetos objetos;
-	private Pokemon oP;
+	private Movimiento poke;
+	
 	
 	//constructor objeto
 	public CrudObjetos (Objetos o) {
 		objetos = new Objetos (o.getId(), o.getNombre(), o.getPrecio(), o.getTipo(), o.getAccion(), o.getCantidad());		
 	}
+	public void CrudMovimiento (Movimiento poke) {
+		poke = new Movimiento (poke.getId(), poke.getNombre(), poke.getTipo(), poke.getPoder(), poke.getPrecision(), poke.getPp(), poke.getCategoria(), poke.getAtaque(),
+				poke.getAtaqueEsp(), poke.getDefensa(), poke.getDefensaEsp(), poke.getDireccion());
+	}
 	
-
 	public Objetos getObjeto() {
 		return objetos;
 	}
@@ -26,9 +30,9 @@ public class CrudObjetos {
 	//metodos para actualizar, debido a las acciones 	
 	//se debe imponer condiciones para su funcionamiento, contenedor general para condiciones
 		
-	public void accionObjeto () {
+	public void accionObjeto (Movimiento poke) {
 		if(objetos.getTipo() == 1) {
-			oP.setVida(objetos.getTipo() + oP.getVida());			
+			.setVida(objetos.getTipo() + oP.getVida());			
 		}else if(objetos.getTipo() == 2){
 			oP.setVida(objetos.getAccion() + oP.getVida());
 			}else if (objetos.getTipo() == 3) {
