@@ -1,6 +1,5 @@
 package pokemonTerminalCrud;
 
-import pokemonTerminalModel.Movimiento;
 import pokemonTerminalModel.Objetos;
 import pokemonTerminalModel.Pokemon;
 
@@ -28,19 +27,19 @@ public class CrudObjetos {
 	public void accionObjeto (Pokemon p) {
 		if(objetos.getTipo() == 1 && p.getVida() > 0) {
 			p.setVida(objetos.getAccion() + p.getVida());
-		}else if(objetos.getTipo() == 2){
-			p.setVida(objetos.getAccion() + p.getVida());
-			}else if (objetos.getTipo() == 3) {
+		}else if(objetos.getTipo() == 2 && p.getVida() <= 0){
+			p.setVida(p.getVida0() / objetos.getAccion());
+			}else if (objetos.getTipo() == 3 && p.getVida() > 0) {
 				p.setAtaque(objetos.getAccion() + p.getAtaque());
-				}else if (objetos.getTipo() == 4) {
+				}else if (objetos.getTipo() == 4 && p.getVida() > 0) {
 					p.setAtaqueEspecial(objetos.getAccion() + p.getAtaqueEspecial());
-					}else if (objetos.getTipo() == 5) {
+					}else if (objetos.getTipo() == 5 && p.getVida() > 0) {
 						p.setDefensa(objetos.getAccion() + p.getDefensa());
-						}else if (objetos.getTipo() == 6) {
+						}else if (objetos.getTipo() == 6 && p.getVida() > 0) {
 							p.setDefensa(objetos.getTipo() + p.getDefensa());
-							}else if (objetos.getTipo() == 7) {
+							}else if (objetos.getTipo() == 7 && p.getVida() > 0) {
 								p.setVelocidad(objetos.getTipo() + p.getVelocidad());
-								}else if (objetos.getTipo() == 8) {
+								}else if (objetos.getTipo() == 8 && p.getVida() > 0) {
 								p.setPrecision(objetos.getTipo() + p.getPrecision());
 								}
 	}	
