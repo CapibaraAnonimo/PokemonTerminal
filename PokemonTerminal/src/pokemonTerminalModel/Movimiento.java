@@ -15,7 +15,7 @@ public class Movimiento {
 	private int defensaEsp = 0;
 	private int condicionEstado = 0; // quemado 0, congelación 1, paralisis 2, enveneado 3, dormido 4,
 	private int probEstado = 0;
-	private boolean direccion=true;
+	private boolean direccion;
 
 	// Constructor para movimientos sin cambios
 	public Movimiento(int id, String nombre, int tipo, int poder, int precision, int pp, int categoria) {
@@ -63,7 +63,7 @@ public class Movimiento {
 		return pp;
 	}
 
-	public boolean isDireccion() {
+	public boolean getDireccion() {
 		return direccion;
 	}
 
