@@ -1,13 +1,17 @@
 package pokemonTerminalDatos;
 
+import pokemonTerminalCrud.CrudMovimientos;
 import pokemonTerminalModel.Movimiento;
 import pokemonTerminalModel.Pokemon;
 
 public class PokeStats {
+	PokeAtaques mov = new PokeAtaques();
+	
 	//pokede id, hp, ataque, defensa, ataque especial, defensa especial, velocidad
 	public Pokemon stats[] = {
-			new Pokemon(1, "Bulbasur", 11, 120, 75, 76, 69, 85, 65, new Movimiento [] {
-				new Movimiento (33, "Placaje", 0, 35, 100, 35, 1)}, new String[] {
+			new Pokemon(1, "Bulbasur", 11, 120, 75, 76, 69, 85, 65, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
 					  "                                                                        "
 					, "                    ░▓▓▓▓▓▓▒                                            "
 					, "                  ▒▓▓▓▓▓▓▓▓▓▓▓▓▒                                        "
@@ -47,7 +51,9 @@ public class PokeStats {
 					, "                       ▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒                                "
 					, "                      ░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒                                  "
 					, "                        ░▒▓▓▓▓▓▓▓▓▓▒                                    "}),
-			new Pokemon(4, "Charmander", 4, 114, 79, 63, 72, 70, 85, new String[] {
+			new Pokemon(4, "Charmander", 4, 114, 79, 63, 72, 70, 85, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
 					  "                                                                          "
 					, "                                      ░▒▓▓▓▓▓▓▓▓▒▒                        "
 					, "                                  ░▒▒▓▓▒▒▒▒▒▒▒▒▒▒▓▓▓▓▒                    "
@@ -87,7 +93,9 @@ public class PokeStats {
 					, "                                              ▒▓▓▓▓▓▓▓▒▒▒▒▓▓▓▓▓▓▄░        "
 					, "                                                ░▓▀▀▓▓▓▓▓▓▓▓█▓▓▓▓▒        "
 					, "                                                     ▒▀▀▀▀▀▀▀▀▀▒          "}),
-			new Pokemon(7, "Squirtle", 7, 119, 74, 85, 63, 84, 63, new String[] {
+			new Pokemon(7, "Squirtle", 7, 119, 74, 85, 63, 84, 63, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
 					  "                                                                              "
 					, "                      ▒▒▓▓▓▓▓▓▓▓▓▓▓▒                                          "
 					, "                  ▒▒▓▓▒▒░░░▒▒▒▒▒▒▒▒▓▓▓▓▒                                      "
@@ -126,7 +134,9 @@ public class PokeStats {
 					, "          ▒▓██▓▒▒▓██▓▒                  ▐▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▒                    "
 					, "                                          ░▓▀▀▓▒░▓▀▀▓▒                        "}),
 			
-			new Pokemon (3, "Venusaur", 11, 155, 112, 103, 120, 108, 100, new String [] {
+			new Pokemon (3, "Venusaur", 11, 155, 112, 103, 120, 108, 100, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
 					  "                                                                                                                                                         "
 					, "                                                                                  ▒▒▒▒▒▒▒▒▒▒░                                                            "
 					, "                                         ░▒▒▒▒▒▒▒▒▒▒▒▒▒▒░                    ░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░                                                        "
@@ -191,7 +201,9 @@ public class PokeStats {
 					, "                        ▒▀▀▓▓████▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓▓▀▒             ▒▒▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▒                                                                  "
 					, "                            ▀▀▀▀▀▓▓██████████▓▓▀▀▀░                                                                                                      "
 					, "                                  ▀▀▀▀▀▀▀▀▀▀▀▀                                                                                                           "}),
-			new Pokemon (9, "Blastoise", 10, 154, 113, 120, 125, 94, 98, new String [] {
+			new Pokemon (9, "Blastoise", 10, 154, 113, 120, 125, 94, 98, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
 					  "                                                                                                                                         "
 					, "                                                                       ░▒▓▓▓▒                            ░▓▓▓▓▒                          "
 					, "                                                                     ░▓▓▓▒▒▒▓▓▓▓▒    ░▓▓▓▓▓▓▓▓▓▓▓▓▒  ▒▓█▓▓▓▓▓▓▓█▓▓▓▓▓▓▒                  "
@@ -250,7 +262,10 @@ public class PokeStats {
 					, "                        ▒▓█▓▒    ░▄▄▄▓▓█▓▓▓▄▄▄▄▓▓▓▒                                                                                      "
 					, "                          ▀▓▓▀▄▄▓▓▓▀▀▀▒   ▒▀▀▀▀▀░                                                                                        "
 					, "                            ▀▀▀▀▀▀░                                                                                                      "}),
-			new Pokemon (6, "Charizard", 9, 153, 114, 98, 105, 116, 120, new String [] {""
+			new Pokemon (6, "Charizard", 9, 153, 114, 98, 105, 116, 120, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
+					  ""
 					, "                                                   ▒▒▓▒"
 					, "                                                 ▒▒▓▓▓▒  ▒▓▓▓▓▒"
 					, "                                                 ░▒▓▓▓▓▓▓▓▓▓▓▓▓▓▒"
@@ -323,7 +338,9 @@ public class PokeStats {
 					, "                                     ▀▓████▓▓▐▓█████▓▀▀▀▀                                        ▐▓███▓▓▓▓▒▒▓▓▓▓▒▒░▒▒▓▒ ▒▓▓▓▒"
 					, "                                                                                                   ▒▓██▓▓▒░░▒▓▓▓▓░  ░▒▓▓▓▓██▒"
 					, "                                                                                                       ▒▓▓▓▄▓▓▌▒▓▓▓▒▄▓▓████▓▒"} ),
-			new Pokemon (38, "Ninetales", 9, 148, 105, 95, 120, 90, 120, new String [] {
+			new Pokemon (38, "Ninetales", 9, 148, 105, 95, 120, 90, 120, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
 					  "                                                                                                                                                 "
 					, "                                               ▒▒▒▒▒▒▒▒▒▓▓▒ ▄                                                                                    "
 					, "                                           ▒▒▒▒▒▒▒▒▒░░░▒▒▒▒▒▓▓▒▄▄▄▄▄▄▄▄▄                                                                         "
@@ -389,7 +406,9 @@ public class PokeStats {
 					, "                                                                                                               ▐▓▓▓▒▒▒▒▒▒▒▒▒▓▓▒                  "
 					, "                                                                                                                 ▒▓▓▓▓▓▓▓▓▓▓▓▓▒                  "
 					, "                                                                                                                   ░▓▀▀▀▀▀▀▓▒                     "}),
-			new Pokemon (448, "Lucario", 1, 145, 143, 90, 90, 121, 110, new String [] {
+			new Pokemon (448, "Lucario", 1, 145, 143, 90, 90, 121, 110, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
 					  "                                                                                                "
 					, "                                                                ░▓▓▓▓▒                          "
 					, "                                                ▒▓▓▒          ▒▓▓▓▓▓▓▒                          "
@@ -449,7 +468,9 @@ public class PokeStats {
 					, "              ▒▓▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒                                          ▒▓████████████▓▒  "
 					, "                ▒▓█▓██▓▓▓███▓▓▓▓▓▒                                                              "
 					, "                  ░▒▓▓▀▀▀▀▀▀▀▀▓▒                                                                "}),
-			new Pokemon (143, "Snorlax", 0, 235, 143, 85, 130, 76, 50, new String [] {
+			new Pokemon (143, "Snorlax", 0, 235, 143, 85, 130, 76, 50, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
 					  "                                                                                                                                        "
 					, "                                                                                    ░▒▓▓▓▓▓▒                                            "
 					, "                                                                                ░▓▓▓▓▓▓▓▓▓▓▓▓                                           "  
@@ -512,7 +533,9 @@ public class PokeStats {
 					, "                                                                              ░▓▓▓▓▓▓▒▒▓▓▓▓▓▓▒▒▓▓▓▓▓▓▒                                  "
 					, "                                                                                 ▒▀▀▓▓▓▓▓▓▓▓▓▓▓▓▀▀▀▒                                    "
 					, "                                                                                     ▀▀▀▀▀▀▀▀▀▀░                                        "}),
-			new Pokemon (129, "MagiKarp", 10, 95, 33, 75, 40, 31, 100, new String [] {
+			new Pokemon (129, "MagiKarp", 10, 95, 33, 75, 40, 31, 100, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
 					  "                                                                                                           "
 					, "                                                               ░▒▓▒                                        "
 					, "                                                             ░▒▓▓▓▓▓▒                                      "
@@ -566,7 +589,9 @@ public class PokeStats {
 					, "        ░░░░░▒▒▒▓▓▒▀░           ▒▒▓▓▓▒▒░░░░                                                                "
 					, "       ▒▒▓▓▓▓▓▓▓▒                  ▒▓▓▓▓▓▒▒░░░░                                                            "
 					, "                                       ▒▓▓▓▓▓▓▒                                                            "}),
-			new Pokemon (130, "Gyarados", 10, 170, 159, 99, 120, 72, 101, new String [] {
+			new Pokemon (130, "Gyarados", 10, 170, 159, 99, 120, 72, 101, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
 					  "                                                                                                                                                               "
 					, "                                                                                                                                                  ▄▄           "
 					, "                                                                                                                                                 ▒▓▓▓▄         "
@@ -639,7 +664,9 @@ public class PokeStats {
 					, "                       ▒▓▓▒▒▒▓▓▓▒░▒▒▓▓▒    ▒▓▓▓▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓                  ▒▓▓▒░▒▒▒▒▒▓▓▓▓▓▓                                                             "
 					, "                         ▒▒▓▒▒▒▒▒▒▓▓▒        ▒▓▓▓▓▓▓▓▓▓▓▒                            ▒▓▓▓▓▓▓▓▓▒                                                                 "
 					, "                           ▒▒▓▓▓▓▓▒                                                                                                                             "}),
-			new Pokemon (257, "Blaziken", 9, 155, 154, 90, 90, 117, 100, new String [] {
+			new Pokemon (257, "Blaziken", 9, 155, 154, 90, 90, 117, 100, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
 					  "                                                                                                                               "
 					, "                                                              ▒▄▄▒░                                                            "
 					, "                                                            ▒▓▓▓▓▓▓▓▓▓▓▓▓▒▒                                                    "
@@ -706,7 +733,9 @@ public class PokeStats {
 					, "                          ▒▀▀▀▀▀░   ▀▀░   ▒▒▓▓▒▒▓▓▓▀░     ▀▀▀▀░                                                                "
 					, "                                           ▐▓▓▓▓▓▀░                                                                            "
 					, "                                             ▀▀▀                                                                               "}),
-			new Pokemon (153, "Meganium", 11, 155, 112, 120, 120, 92, 100, new String [] {
+			new Pokemon (153, "Meganium", 11, 155, 112, 120, 120, 92, 100, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
 					  "                                                                                                         "
 					, "                                              ▄▄▄▄                                                       "
 					, "                                          ▄▄▄▓▓▓▓▓▓▄                                                     "
@@ -776,7 +805,9 @@ public class PokeStats {
 					, "                                                  ▀▓▓▓▓▒▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▒                                "
 					, "                                                    ▀▓▓██▓▓░  ▒▓▓▓▓▒░▐▓▓▒                                "
 					, "                                                       ▀▀▒▓▓▓▓▓▓▓▒▓▓▓▓▓                                  "}),
-			new Pokemon (254, "Sceptile", 11, 145, 115, 85, 105, 112, 140, new String [] {
+			new Pokemon (254, "Sceptile", 11, 145, 115, 85, 105, 112, 140, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
 					  "                                                                                                                                                      "
 					, "                                                                                ░▒▓▓▓▓▓▓▓▓▓▓▓▒                                                        "
 					, "                                                        ░▓▓▓▓▒            ░▓▓▓▓▓▓▓▒▒▒▒▒▒▓▓▓▓▓▓▓▒                                                      "
@@ -839,7 +870,9 @@ public class PokeStats {
 					, "                                    ▐▓▓▓▓▓▓██▓▒▒▒▓▓▓▀▀▓▓▓▓▓▒                                                                                          "
 					, "                                     ▒▀▀▀▀▀▀▓▓▓▓▓▓▀▒   ▒▀▀▀▒                                                                                          "
 					, "                                             ▀▀▀▀░                                                                                                    "}),
-			new Pokemon (395, "Empoleon", 10, 159, 116, 108, 121, 117, 80, new String  [] {
+			new Pokemon (395, "Empoleon", 10, 159, 116, 108, 121, 117, 80, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
 					  "                                                                                                                                                               "
 					, "                                                                                        ░▒▒▒▓▒▒                                                                "
 					, "                                                                                      ▒▒▒▒▒▒▒▒░         ▒▒░                                                    "
@@ -909,7 +942,9 @@ public class PokeStats {
 					, "                                                           ▀▀▀▀▀                             ▐▓▓▓▒▓▓▓▓▓▓▓▒▒▒▒▒▒▓▓██▓▓▓▓▓▒                                      "
 					, "                                                                                             ▒▓▓▓▓█▓▒  ▒▓▓▓▓▓▓▒  ▀▀▒▓▓█▓▒                                      "
 					, "                                                                                                         ▒▓▓▒                                                  "}),
-			new Pokemon (306, "Aggron", 8, 145, 143, 200, 80, 72, 70, new String  [] {
+			new Pokemon (306, "Aggron", 8, 145, 143, 200, 80, 72, 70, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
 					  "                                                                                                                                               "
 					, "                                                    ▒▓▓▓▓▓▓▓▓▓▓▓▓▒░                                                                            "
 					, "                                             ░▒▓▓▓▒▒▒▀▀▀▀▀▀▀▀▀▀▀▀▒▓▓▓▓▒                                                                        "
@@ -974,7 +1009,10 @@ public class PokeStats {
 					, "                                                ▒▀▀▀▀▀▒                                                    ▐▓▓▒ ▓▓▓▀▀▀▀▓▓▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▒      "
 					, "                                                                                                           ▐▓██▓▓▀░     ▀▀▀▓▓██▓▒ ▀▀▀▀▀▀░      "
 					, "                                                                                                            ▀▀▀▀░           ▀▀▀▀░              "}),
-			new Pokemon (59, "Arcanine", 9, 165, 143, 100, 100, 108, 115, new String  [] {""
+			new Pokemon (59, "Arcanine", 9, 165, 143, 100, 100, 108, 115, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
+					  "                                                                                                                                              "
 					, "                                                               ▒▄▄▄▄▒░                                                                        "
 					, "                                                              ▐▓▓▓▓▓▓▓▓▓▓▒           ▒▓▓▒░                                                    "
 					, "                                                               ▀▓▓▓▒▒▒▀▀▓▓▓▓▓▓▒▒  ░▒▓▒▓▓▓▒                                                    "
@@ -1039,7 +1077,9 @@ public class PokeStats {
 					, "▐▓█▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▀▒                         ▒▀▀▀▒     ▒▀▀▓▓▓▓▓█▓▒       ▒▓▓███▓▓▓▓██▓▓▓▓▓▓▓▓▓▓▓▀▒                                    "
 					, " ▀▓▓███▓▓▓▓▓█▓▓▓▓▓▓▓██▓▓▀░                                         ▀▀▀▀▀▀░         ▀▓█████████████▓▓▀▀▀░                                      "
 					, "   ▀▀▀▓▓██████████▓▓▀"}),
-			new Pokemon (445, "Garchomp", 15, 183, 165, 115, 105, 90, 122, new String [] {""
+			new Pokemon (445, "Garchomp", 15, 183, 165, 115, 105, 90, 122, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {""
 					, "                                   ▄▄▄▄▒▒▓▓▓▓▓▓▓▓▒▒▄▄"
 					, "                                 ▒▒▓▓▓▓▒▒        ░▒▓▓▒▒▄▄▄"
 					, "                               ░▒▒▒▒▒▒▒▒▄▄▒░░░░░░░░░░░▒▓▓▒▒▄▄▄                        ▒▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄"
@@ -1112,7 +1152,9 @@ public class PokeStats {
 					, "                             ░▒▓▒▒▒▒▓▓▓▓▓▓▒▒▒▒▓▓▓▓█▓▒                                              ▒▒▓▒▒▓▓▒▒▓▓▒▐▓▓▓▒▓▓▓▓▓▓▒"
 					, "                               ▒▓▓█▓▒  ▒▓██▓█▓▒                                                    ░▒▓▓▓▒  ▐▓▓▓▒▓▓▒  ▒▓▓▒"
 					, ""}),
-			new Pokemon (248, "Tyranitar", 5, 175, 169, 130, 120, 103, 81, new String [] {
+			new Pokemon (248, "Tyranitar", 5, 175, 169, 130, 120, 103, 81, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
 					  "                                                                                                                                        "
 					, "                                                                                 ▒▄▄▄▄▄▒                                                "
 					, "                                                                               ▒▓▓▓▓▓█▓▒                                                "
@@ -1180,7 +1222,9 @@ public class PokeStats {
 					, "                             ▀▀▀▀▀▀▀▀▀▓▓▓▓▒▒▒▓▓▓▀▀▓▓██████▓▒                                                                            "
 					, "                                       ▀▓▓██▓▓▀    ▀▀▀▀▀▀▀▀                                                                             "
 					, "                                          ▀▀                                                                                            "}),
-			new Pokemon (359, "Absol", 16, 140, 165, 80, 80, 85, 95, new String [] {
+			new Pokemon (359, "Absol", 16, 140, 165, 80, 80, 85, 95, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
 					  "                                                                                                             "
 					, "                                                          ▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒                                   "
 					, "                                                    ▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒                             "
@@ -1236,7 +1280,9 @@ public class PokeStats {
 					, "                          ▐▓██▓▓▀▀▐▓████████▓▓▓▓▓████▓▓█▓▒                                      ▀▀           "
 					, "                                  ▐▓████▓▒        ▒▓████▓▒                                                   "
 					, "                                    ▒▓▓▒                                                                     "}),
-			new Pokemon (131, "Lapras", 10, 205, 115, 100, 115, 94, 80, new String [] {
+			new Pokemon (131, "Lapras", 10, 205, 115, 100, 115, 94, 80, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
 					  "                                                                                                                                                           " 
 					, "                               ░▒▓▓▓▓▓▓▓▒                                                                                                                  "
 					, "                           ▒▓▓▓▓▒▒▒▒▒▓▓▓▓▓█▓▒                                                                                                              "
@@ -1294,7 +1340,9 @@ public class PokeStats {
 					, "                                                           ▒▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▒                  ▒▓██▓▓▓▓▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓            "
 					, "                                                                                                           ▒▓█████▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▒▓▓▓████▓▒                "
 					, "                                                                                                                   ▒▓█████████████▓▓▒                      "}),
-			new Pokemon (160, "Feraligatr", 10, 160, 137, 120, 103, 89, 98, new String [] {
+			new Pokemon (160, "Feraligatr", 10, 160, 137, 120, 103, 89, 98, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
 					  "                                                                                                                                                        "
 					, "                                                             ▒▄░                                                                                        "
 					, "                                                           ▒▓▓▓▓▓▒                                                                                      "
@@ -1359,7 +1407,10 @@ public class PokeStats {
 					, "                                                                                                                 ▀▀▀▀▀▓▓█████▓▒▒▒▀▀▓▓▓▓▓███▓▀▀▀░        "
 					, "                                                                                                                       ▀▀▀▀▀▓▓█████████▓▀▀▀░            "
 					, "                                                                                                                             ▀▀▀▀▀▀▀▀▀▀                "}),
-			new Pokemon (260, "Swamper", 10, 175, 143, 110, 110, 94, 80, new String [] {""
+			new Pokemon (260, "Swamper", 10, 175, 143, 110, 110, 94, 80, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
+					  "                                                                                                                                                               "
 					, "                                          ▒▓▓▓▓▓▓▓▓▓▓▓▓▒                                                        ▒▓▓▓▓▓▓▓▓▓▓▓▓▒                                 "
 					, "                                     ▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒                                              ▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░                              "
 					, "                                  ░▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░                                        ░▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▒                              "
@@ -1431,8 +1482,11 @@ public class PokeStats {
 					, "       ▒▓▓▓▓▒▒▒▓▓▓▓▒▒▒▓▓▓▓▓▓▒▒▒▓▒▒▒▓▓▓▓▓▓▀▀▀▀▀▓▓▓█████████████████████████████████▓▓▀▀▀▀▀▀▀▀▒░               ░▒▓▓▓███▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░               "
 					, "       ▓██▓▒▒▒▓▓▓▓▓▒▒▓▓▓█▓▓▓▓▒▒▒▒▒▓▓▓▓▓▓▒      ▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░                            ▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓████▓▓▓▓▓▓▓▓▓▓▓▒░               "
 					, "       ▒▓▓▓▓▓▓▓▓██▓▓▓▓████▓▓▓▓▓▓▓▓▓▓▓▒░                                                                                ▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒                  "}),
-			new Pokemon (392, "Infernape", 9, 151, 136, 91, 91, 111, 128, new String [] {""
-					, "            ▄▄▄▄▄▄▄▄"
+			new Pokemon (392, "Infernape", 9, 151, 136, 91, 91, 111, 128, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
+					  "                                                                                                                               "
+					, "            ▄▄▄▄▄▄▄▄                                                                                                           "
 					, "      ▄▄▄▄▄▓▓▓▓▓▓▓▓▓▓▄▄▄                                          ▒▒                                                      ░▒▒░ "
 					, "    ▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▄▄▄▄▄▄▄░                             ▒▒▒▒▒▒░                                             ░▒▒▒▒▒▒▒▒▒▒▒░"
 					, "  ▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒                         ▒▒▓▓▒▒░                                           ▒▒▒▒▒▒▒▒▒▒▒▒▒▒░  "
@@ -1495,7 +1549,10 @@ public class PokeStats {
 					, "                               ▒▓██▓▒                                    ▒▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒                      "
 					, "                                                                             ▒▓████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓▒                        "
 					, "                                                                                     ░▓▀▀▓▒░▓▀▀▀▀▓▒                            "}), 
-			new Pokemon (389, "Torterra", 11, 170, 141, 125, 105, 85, 76, new String [] {""
+			new Pokemon (389, "Torterra", 11, 170, 141, 125, 105, 85, 76, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
+					new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33)), new CrudMovimientos(mov.getMovimiento(33))}, 
+					new String[] {
+					  "                                                                                                                                                    "
 					, "                                                                                                        ▄▄▄▄▄▄▄                                     "
 					, "                                                                                                   ▄▄▄▓▓██▓▓▓▓▓▓▄▄▄  ▄▄▄▄                           "
 					, "                                                                                   ▄▄▄▄▄▄        ▄▓▓██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▄                         "

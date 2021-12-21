@@ -1,5 +1,6 @@
 package pokemonTerminalModel;
 
+import pokemonTerminalCrud.CrudMovimientos;
 import pokemonTerminalDatos.TablaTipos;
 
 public class Pokemon {
@@ -18,12 +19,12 @@ public class Pokemon {
 	private int velocidad;
 	private int precision = 100;
 	private int evasion = 100;
-	private Movimiento movimientos[] = new Movimiento[4];
+	private CrudMovimientos movimientos[] = new CrudMovimientos[4];
 	private int stage = 0;
 	private String sprite[];
 
 	public Pokemon(int id, String nombre, int tipo, int vida, int ataque, int defensa, int defensaEspecial, int ataqueEspecial,
-			int velocidad, Movimiento movimientos[] ,String sprite[]) {
+			int velocidad, CrudMovimientos movimientos[] ,String sprite[]) {
 
 		this.id = id;
 		this.nombre = nombre;
@@ -50,13 +51,13 @@ public class Pokemon {
 	}
 
 
-	public Movimiento[] getMovimientos() {
+	public CrudMovimientos[] getMovimientos() {
 		return movimientos;
 	}
 
 
 
-	public void setMovimientos(Movimiento[] movimientos) {
+	public void setMovimientos(CrudMovimientos[] movimientos) {
 		this.movimientos = movimientos;
 	}
 
@@ -146,11 +147,11 @@ public class Pokemon {
 		this.evasion = evasion;
 	}
 
-	public Movimiento getMovimiento(int posicion) {
+	public CrudMovimientos getMovimiento(int posicion) {
 		return movimientos[posicion];
 	}
 
-	public void setMovimiento(Movimiento mov, int posicion) {
+	public void setMovimiento(CrudMovimientos mov, int posicion) {
 		this.movimientos[posicion] = mov;
 	}
 	
