@@ -63,7 +63,7 @@ public class Equipo {
 	}
 	
 	public CrudPokemon getPokemon(int i) {
-		return pokemons[i-1];
+		return pokemons[i];
 	}
 
 

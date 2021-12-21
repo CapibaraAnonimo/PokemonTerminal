@@ -10,8 +10,7 @@ public class ControllerEquipo {
 	public static void elegirEquipo(CrudEquipo equipo) {
 		PokeStats lp = new PokeStats();
 		
-		System.out.println("Diga su nombre o nombre de equipo");
-		equipo = new CrudEquipo(Leer.dato());
+
 		
 		for(int i = 0; i < 6; i++)
 		{
@@ -25,7 +24,7 @@ public class ControllerEquipo {
 		System.out.println("Tu equipo es: \n");
 		for(int i = 0; i < equipo.getEquipo().getPokemons().length; i++)
 		{
-			System.out.println(equipo.getEquipo().getPokemon(i+1).getPokemon());
+			System.out.println(equipo.getEquipo().getPokemon(i).getPokemon());
 		}
 		
 		System.out.println("Quiere cambiar un pokemon");
