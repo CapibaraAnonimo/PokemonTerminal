@@ -54,15 +54,16 @@ public class PokeAtaques {
 										new Movimiento(8, "Puño Hielo,", 14, 75, 100, 15, 1, 1, 10),
 										//Veneno
 										new Movimiento(188, "Bomba Lodo", 3, 90, 100, 10, 2, 3, 30 ),
-										new Movimiento(482, "onda Toxica", 3, 90, 100, 10, 2, 3, 10 ),
+										new Movimiento(482, "Onda Toxica", 3, 90, 100, 10, 2, 3, 10 ),
 
 									//id, nombre, tipo, poder, precision, pp, categoria, ataque, ataqueEsp, defensa, defensaEsp
 										//Positivo para sumar estadistica, negativo para bajar
+										//True para ti mismo False para el enemigo
 										//Normal
-										new Movimiento(14, "Danza Espada", 	0, 0, 100, 20, 0, 2 , 0, 0, 0 ),
-										new Movimiento(437, "Llueve Hojas", 11, 130, 90, 5, 1, 0, -2, 0, 0),
+										new Movimiento(14, "Danza Espada", 	0, 0, 100, 20, 0, 2 , 0, 0, 0, true ),
+										new Movimiento(437, "Llueve Hojas", 11, 130, 90, 5, 1, 0, -2, 0, 0, true),
 										//Lucha
-										new Movimiento(370, "A Bocajarro", 1, 120, 100, 5, 1, 0, 0 ,-2,-2),
+										new Movimiento(370, "A Bocajarro", 1, 120, 100, 5, 1, 0, 0 ,-2,-2, true),
 										//Fantasma
 										
 																								};
