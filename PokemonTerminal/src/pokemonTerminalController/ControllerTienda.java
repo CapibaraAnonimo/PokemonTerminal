@@ -16,9 +16,9 @@ public class ControllerTienda {
 		
 		do
 		{
-			System.out.println("1. Comprar objetos\n"
-					+ "2. Mirar Carrito"
-					+ "3. Pagar"
+			System.out.println("\n\n1. Comprar objetos\n"
+					+ "2. Mirar Carrito\n"
+					+ "3. Pagar\n"
 					+ "4. Salir");
 			aux1 = Leer.datoInt();
 			switch(aux1)
@@ -35,7 +35,7 @@ public class ControllerTienda {
 				{
 					System.out.println("Diga cuantas unidades quiere");
 					aux2 = Leer.datoInt();
-					tienda.actualizarCantidad(tienda.getTienda().getObjeto(aux1).getObjeto(), aux2);
+					tienda.actualizarCantidad(tienda.getTienda().getObjeto(aux1-1).getObjeto(), aux2);
 				}
 				break;
 			case 2:
@@ -43,13 +43,13 @@ public class ControllerTienda {
 				{
 					if(tienda.getTienda().getObjeto(i).getObjeto().getCantidad() > 0)
 					{
-						System.out.println(tienda.getTienda().getObjeto(i).getObjeto() 
+						System.out.println("\n" + tienda.getTienda().getObjeto(i).getObjeto() 
 								+ "x" + tienda.getTienda().getObjeto(i).getObjeto().getCantidad());
 					}
 				}
 				break;
 			case 3:
-				System.out.println("Su compra es:");
+				System.out.println("\n\nSu compra es:");
 				for(int i = 0; i < tienda.getTienda().getObjetos().length; i++)
 				{
 					if(tienda.getTienda().getObjeto(i).getObjeto().getCantidad() > 0)
@@ -59,6 +59,7 @@ public class ControllerTienda {
 					}
 				}
 				System.out.print("Precio total: ");
+				aux2 = 0;
 				for(int i = 0; i < tienda.getTienda().getObjetos().length; i++)
 				{
 					if(tienda.getTienda().getObjeto(i).getObjeto().getCantidad() > 0)
@@ -67,7 +68,7 @@ public class ControllerTienda {
 					}
 				}
 				System.out.println(aux2);
-				System.out.println("1. Pagar"
+				System.out.println("1. Pagar\n"
 						+ "2. Volver al menú");
 				if(aux2 <= equipo.getEquipo().getDinero())
 				{
@@ -86,7 +87,7 @@ public class ControllerTienda {
 			default:
 				break;
 			}
-		}while(aux1 != 3);
+		}while(aux1 != 4);
 		
 	}
 	
