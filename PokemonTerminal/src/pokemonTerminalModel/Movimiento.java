@@ -15,6 +15,7 @@ public class Movimiento {
 	private int defensaEsp = 0;
 	private int condicionEstado = 0; // quemado 0, congelación 1, paralisis 2, enveneado 3, dormido 4,
 	private int probEstado = 0;
+	private boolean direccion;
 
 	// Constructor para movimientos sin cambios
 	public Movimiento(int id, String nombre, int tipo, int poder, int precision, int pp, int categoria) {
@@ -29,7 +30,7 @@ public class Movimiento {
 
 	// Constructor para movimientos con cambios de estadisticas
 	public Movimiento(int id, String nombre, int tipo, int poder, int precision, int pp, int categoria, int ataque,
-			int ataqueEsp, int defensa, int defensaEsp) {
+			int ataqueEsp, int defensa, int defensaEsp, boolean direccion) {
 		this.id = id;
 		this.nombre = nombre;
 		this.tipo = tipo;
@@ -41,6 +42,7 @@ public class Movimiento {
 		this.ataqueEsp = ataqueEsp;
 		this.defensa = defensa;
 		this.defensaEsp = defensaEsp;
+		this.direccion = direccion;
 	}
 
 	// Constructor para movimientos que modifican la condición de estado
@@ -59,6 +61,14 @@ public class Movimiento {
 
 	public int getPp() {
 		return pp;
+	}
+
+	public boolean getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(boolean direccion) {
+		this.direccion = direccion;
 	}
 
 	public void setPp(int pp) {

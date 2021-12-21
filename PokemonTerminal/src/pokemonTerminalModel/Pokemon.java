@@ -19,15 +19,12 @@ public class Pokemon {
 	private int velocidad;
 	private int precision = 100;
 	private int evasion = 100;
-	private Movimiento movimientos[] = { new Movimiento(22, "Látigo Cepa", 11, 45, 100, 25, 0),
-			new Movimiento(22, "Hoja afilada", 11, 45, 100, 25, 0),
-			new Movimiento(22, "Placaje", 11, 45, 100, 25, 0),
-			new Movimiento(22, "Rayo Solar", 11, 45, 100, 25, 0) };
+	private Movimiento movimientos[] = new Movimiento[4];
 	private int stage = 0;
 	private String sprite[];
 
 	public Pokemon(int id, String nombre, int tipo, int vida, int ataque, int defensa, int defensaEspecial, int ataqueEspecial,
-			int velocidad, String sprite[]) {
+			int velocidad, Movimiento movimientos[] ,String sprite[]) {
 
 		this.id = id;
 		this.nombre = nombre;
@@ -39,8 +36,11 @@ public class Pokemon {
 		this.defensaEspecial = defensaEspecial;
 		this.ataqueEspecial = ataqueEspecial;
 		this.velocidad = velocidad;
+		this.movimientos= movimientos;
 		this.sprite = sprite;
 	}
+	
+	
 
 	public int getId() {
 		return id;
@@ -49,7 +49,20 @@ public class Pokemon {
 	public void setId(int id) {
 		this.id = id;
 	}
-	
+
+
+	public Movimiento[] getMovimientos() {
+		return movimientos;
+	}
+
+
+
+	public void setMovimientos(Movimiento[] movimientos) {
+		this.movimientos = movimientos;
+	}
+
+
+
 	public String getNombre() {
 		return nombre;
 	}

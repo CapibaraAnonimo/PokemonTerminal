@@ -40,7 +40,7 @@ public class Partida {
 			imprimir.imprimirVida(poke[defensor].getPokemon());
 			imprimir.imprimirVidaDibujo(poke [defensor].getPokemon());
 			System.out.println("");
-			imprimir.menuMovimiento(poke[defensor].getPokemon());
+			imprimir.menuMovimiento(Pokemon p, A(poke[defensor].getPokemon());
 			do 
 			{
 				System.out.println("\nDiga ataque deseado");

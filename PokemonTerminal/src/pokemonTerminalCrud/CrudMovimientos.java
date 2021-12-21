@@ -10,6 +10,7 @@ public class CrudMovimientos {
 		movimiento = new Movimiento (m.getId(), m.getNombre(), m.getTipo(), m.getPoder(), m.getPrecision(), m.getPp(),
 				m.getCategoria(), m.getCondicionEstado(), m.getProbEstado());
 	}
+	
 	 
 	//metodo para actualizar los movimientos 
 	public void actualizarMovimiento () {

@@ -1,27 +1,21 @@
 package pokemonTerminalVista;
 
+import pokemonTerminalDatos.CuadroAtaquesImprimir;
 import pokemonTerminalModel.Pokemon;
 
 public class Imprimir {
 
-	private String prueba =  "┌──────────────────────────────┐";
-
-	private String prueba1 = "│";
-
-	private String prueba2 = "│";
-
-	private String prueba4 = "└──────────────────────────────┘";
-
 	// Por ahora les declaro estos nombres para saber donde van cada uno en el menú
 
-	public void menuMovimiento(Pokemon pokemon) {
 
-		System.out.println(prueba + "\n" + prueba1 + "1." + pokemon.getMovimiento(0).getNombre() + "\t" + "2."
-				+ pokemon.getMovimiento(1).getNombre() + "\n" + prueba2 + "3." + pokemon.getMovimiento(2).getNombre() + "\t" + "4."
-				+ pokemon.getMovimiento(3).getNombre() + "\n" + prueba4);
+	CuadroAtaquesImprimir i;
+	public void menuMovimiento(Pokemon pokemon, CuadroAtaquesImprimir i ) {
 
+		System.out.println(i.cuadroAtaqueArriba() + "\n" + i.cuadroAtaqueMedio() + "1." + pokemon.getMovimiento(0).getNombre() + "\t" + "2."
+				+ pokemon.getMovimiento(1).getNombre() + "\n" + i.cuadroAtaqueMedio() + "3." + pokemon.getMovimiento(2).getNombre() + "\t" + "4."
+				+ pokemon.getMovimiento(3).getNombre() + "\n" + i.cuadroAtaqueAbajo());
 	}
-
+	
 	public void pokemon(String pokemon) {
 
 	}
