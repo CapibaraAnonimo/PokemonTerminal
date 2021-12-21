@@ -12,22 +12,16 @@ public class CuadroAtaquesImprimir {
 	private String cuadroAbajo = "└──────────────────────────────┘";
 
 	public String cuadroAtaqueArriba () {
-		String im;
-		im ="┌──────────────────────────────┐";
 		
-		return im;
+		return cuadroArriba;
 	}
 	
 	public String cuadroAtaqueMedio () {
-		String cuadroMedio;
-		cuadroMedio = "│";
 		
 		return cuadroMedio;
 	}
 	
 	public String cuadroAtaqueAbajo () {
-		String cuadroAbajo;
-		cuadroAbajo = "└──────────────────────────────┘";
 		
 		return cuadroAbajo;
 	}

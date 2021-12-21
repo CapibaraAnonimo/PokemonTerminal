@@ -9,8 +9,9 @@ public class Imprimir {
 
 
 	CuadroAtaquesImprimir i;
-	public void menuMovimiento(Pokemon pokemon, CuadroAtaquesImprimir i ) {
+	public void menuMovimiento(Pokemon pokemon) {
 
+		CuadroAtaquesImprimir i = new CuadroAtaquesImprimir();
 		System.out.println(i.cuadroAtaqueArriba() + "\n" + i.cuadroAtaqueMedio() + "1." + pokemon.getMovimiento(0).getNombre() + "\t" + "2."
 				+ pokemon.getMovimiento(1).getNombre() + "\n" + i.cuadroAtaqueMedio() + "3." + pokemon.getMovimiento(2).getNombre() + "\t" + "4."
 				+ pokemon.getMovimiento(3).getNombre() + "\n" + i.cuadroAtaqueAbajo());
@@ -26,6 +27,7 @@ public class Imprimir {
 	public void imprimirVida(Pokemon imprimir) {
 		System.out.println(imprimir.getVida());
 	}
+	
 	public void imprimirVidaDibujo (Pokemon imprimir) {
 		for (int i=0;  i < imprimir.getVida() / 3; i++)
 			if (imprimir.getVida() >= 60) {
