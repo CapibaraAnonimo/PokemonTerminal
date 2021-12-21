@@ -2,21 +2,16 @@ package pokemonTerminalCrud;
 
 import pokemonTerminalModel.Movimiento;
 import pokemonTerminalModel.Objetos;
+import pokemonTerminalModel.Pokemon;
 
 public class CrudObjetos {
 
 	
 	private Objetos objetos;
-	private Movimiento poke;
-	
-	
+
 	//constructor objeto
 	public CrudObjetos (Objetos o) {
 		objetos = new Objetos (o.getId(), o.getNombre(), o.getPrecio(), o.getTipo(), o.getAccion(), o.getCantidad());		
-	}
-	public void CrudMovimiento (Movimiento poke) {
-		poke = new Movimiento (poke.getId(), poke.getNombre(), poke.getTipo(), poke.getPoder(), poke.getPrecision(), poke.getPp(), poke.getCategoria(), poke.getAtaque(),
-				poke.getAtaqueEsp(), poke.getDefensa(), poke.getDefensaEsp(), poke.getDireccion());
 	}
 	
 	public Objetos getObjeto() {
@@ -30,23 +25,23 @@ public class CrudObjetos {
 	//metodos para actualizar, debido a las acciones 	
 	//se debe imponer condiciones para su funcionamiento, contenedor general para condiciones
 		
-	public void accionObjeto (Movimiento poke) {
-		if(objetos.getTipo() == 1) {
-			.setVida(objetos.getTipo() + oP.getVida());			
+	public void accionObjeto (Pokemon p) {
+		if(objetos.getTipo() == 1 && p.getVida() > 0) {
+			p.setVida(objetos.getAccion() + p.getVida());
 		}else if(objetos.getTipo() == 2){
-			oP.setVida(objetos.getAccion() + oP.getVida());
+			p.setVida(objetos.getAccion() + p.getVida());
 			}else if (objetos.getTipo() == 3) {
-				oP.setAtaque(objetos.getAccion() + oP.getAtaque());
+				p.setAtaque(objetos.getAccion() + p.getAtaque());
 				}else if (objetos.getTipo() == 4) {
-					oP.setAtaqueEspecial(objetos.getAccion() + oP.getAtaqueEspecial());
+					p.setAtaqueEspecial(objetos.getAccion() + p.getAtaqueEspecial());
 					}else if (objetos.getTipo() == 5) {
-						oP.setDefensa(objetos.getAccion() + oP.getDefensa());
+						p.setDefensa(objetos.getAccion() + p.getDefensa());
 						}else if (objetos.getTipo() == 6) {
-							oP.setDefensa(objetos.getTipo() + oP.getDefensa());
+							p.setDefensa(objetos.getTipo() + p.getDefensa());
 							}else if (objetos.getTipo() == 7) {
-								oP.setVelocidad(objetos.getTipo() + oP.getVelocidad());
+								p.setVelocidad(objetos.getTipo() + p.getVelocidad());
 								}else if (objetos.getTipo() == 8) {
-									oP.setPrecision(objetos.getTipo() + oP.getPrecision());
+								p.setPrecision(objetos.getTipo() + p.getPrecision());
 								}
 	}	
 }
