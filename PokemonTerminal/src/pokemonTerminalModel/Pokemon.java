@@ -9,7 +9,7 @@ public class Pokemon {
 	private int nivel = 50;
 
 	private int tipo;
-
+private int prueba;
 	private int vida;
 	private int vida0;
 	private int ataque;
