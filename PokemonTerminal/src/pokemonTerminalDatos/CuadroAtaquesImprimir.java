@@ -18,14 +18,20 @@ public class CuadroAtaquesImprimir {
 		return im;
 	}
 	
-<<<<<<< HEAD
 	public String cuadroAtaqueMedio () {
 		String cuadroMedio;
 		cuadroMedio = "│";
 		
 		return cuadroMedio;
 	}
-=======
+	
+	public String cuadroAtaqueAbajo () {
+		String cuadroAbajo;
+		cuadroAbajo = "└──────────────────────────────┘";
+		
+		return cuadroAbajo;
+	}
+
 	private String logo = new String(
 			  "                                                                                                            ▄▄▓▓\r\n"
 			+ "                                                                                                          ▄█▓▓▓▓▓▄\r\n"
@@ -60,13 +66,7 @@ public class CuadroAtaquesImprimir {
 			+ "                        ████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▀                                                                                                                              ▐▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▌\r\n"
 			+ "                         ████▓▓▓▓▓▓▓██▀▀▀                                                                                                                                   ▀▀▀██▓▓██▓▓▓▓▓\r\n"
 			+ "                          █████▀▀▀        ");
->>>>>>> 26dbd0424da1c17b79eb02ba9ff0b650d867e10a
 	
-	public String cuadroAtaqueAbajo () {
-		String cuadroAbajo;
-		cuadroAbajo = "└──────────────────────────────┘";
-		
-		return cuadroAbajo;
-	}
+	
 	
 }
