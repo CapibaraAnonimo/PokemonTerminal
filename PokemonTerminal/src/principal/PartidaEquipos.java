@@ -1,16 +1,9 @@
 package principal;
 
 import pokemonTerminalController.ControllerEquipo;
-import pokemonTerminalController.ControllerMov;
+import pokemonTerminalController.ControllerPartida;
 import pokemonTerminalController.ControllerTienda;
 import pokemonTerminalCrud.CrudEquipo;
-import pokemonTerminalCrud.CrudPokemon;
-import pokemonTerminalCrud.CrudTienda;
-import pokemonTerminalDatos.PokeAtaques;
-import pokemonTerminalDatos.PokeStats;
-import pokemonTerminalModel.Equipo;
-import pokemonTerminalVista.Imprimir;
-import utilidades.Leer;
 
 public class PartidaEquipos {
 
@@ -27,6 +20,7 @@ public class PartidaEquipos {
 			ControllerTienda.tienda(equipos[i]);
 		}
 		
+		ControllerPartida.batalla(equipos);
 	}
 
 }

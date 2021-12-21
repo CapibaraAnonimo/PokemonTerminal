@@ -8,15 +8,15 @@ import utilidades.Leer;
 public class ControllerPartida {
 	
 	public static void batalla(CrudEquipo equipos[]) {
+		PokeStats lp = new PokeStats();
+		Imprimir imprimir = new Imprimir();
+		
+		int atacante = 0;
+		int defensor = 1;
+		int movimiento = 0;
+		int vida = 0;
 		do
 		{
-			PokeStats lp = new PokeStats();
-			Imprimir imprimir = new Imprimir();
-			
-			int atacante = 0;
-			int defensor = 1;
-			int movimiento = 0;
-			int vida = 0;
 			
 			imprimir.imprimirSprites(equipos[atacante].getEquipo().getPokemon(equipos[atacante].getEquipo().getPosicion()).getPokemon(), equipos[defensor].getEquipo().getPokemon(equipos[defensor].getEquipo().getPosicion()).getPokemon());
 			
@@ -48,7 +48,7 @@ public class ControllerPartida {
 				defensor = 0;
 				atacante = 1;
 			}
-		}while(poke[0].getPokemon().getVida() > 0 && poke[1].getPokemon().getVida() > 0);
+		}while(equipos[atacante].getEquipo().getPokemon(equipos[atacante].getEquipo().getPosicion()).getPokemon().getVida() > 0 && equipos[defensor].getEquipo().getPokemon(equipos[defensor].getEquipo().getPosicion()).getPokemon().getVida() > 0);
 	}
 
 }
