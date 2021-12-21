@@ -7,6 +7,7 @@ import pokemonTerminalModel.Pokemon;
 public class PokeStats {
 	PokeAtaques mov = new PokeAtaques();
 	
+	
 	//pokede id, hp, ataque, defensa, ataque especial, defensa especial, velocidad
 	public Pokemon stats[] = {
 			new Pokemon(1, "Bulbasur", 11, 120, 75, 76, 69, 85, 65, new CrudMovimientos[] {new CrudMovimientos(mov.getMovimiento(33)), 
