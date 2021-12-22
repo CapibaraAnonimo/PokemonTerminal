@@ -8,7 +8,7 @@ import utilidades.Leer;
 
 public class PartidaEquipos {
 
-	public static void main(String[] args) 
+	public static void main(String[] args) throws InterruptedException 
 	{
 		CrudEquipo equipos[] = new CrudEquipo[2];
 		

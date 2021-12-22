@@ -1,6 +1,5 @@
 package pokemonTerminalDatos;
 
-import pokemonTerminalModel.Pokemon;
 
 public class CuadroAtaquesImprimir {
 	

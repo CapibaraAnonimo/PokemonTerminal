@@ -1,7 +1,6 @@
 package pokemonTerminalDatos;
 
 import pokemonTerminalModel.Movimiento;
-import pokemonTerminalModel.Pokemon;
 
 public class PokeAtaques {
 	
