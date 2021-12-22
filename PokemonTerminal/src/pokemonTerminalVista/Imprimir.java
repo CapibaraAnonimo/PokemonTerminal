@@ -12,9 +12,9 @@ public class Imprimir {
 	public void menuMovimiento(Pokemon pokemon) {
 
 		CuadroAtaquesImprimir i = new CuadroAtaquesImprimir();
-		System.out.println(i.cuadroAtaqueArriba() + "\n" + i.cuadroAtaqueMedio() + "1." + pokemon.getMovimiento(0) + "\t" + "2."
-				+ pokemon.getMovimiento(1) + "\n" + i.cuadroAtaqueMedio() + "3." + pokemon.getMovimiento(2) + "\t" + "4."
-				+ pokemon.getMovimiento(3) + "\n" + i.cuadroAtaqueAbajo());
+		System.out.println(i.cuadroAtaqueArriba() + "\n" + i.cuadroAtaqueMedio() + "1." + pokemon.getMovimiento(0).getMovimiento().getNombre() + "\t" + "2."
+				+ pokemon.getMovimiento(1).getMovimiento().getNombre() + "\n" + i.cuadroAtaqueMedio() + "3." + pokemon.getMovimiento(2).getMovimiento().getNombre() + "\t" + "4."
+				+ pokemon.getMovimiento(3).getMovimiento().getNombre() + "\n" + i.cuadroAtaqueAbajo());
 	}
 	
 	public void pokemon(String pokemon) {
