@@ -32,22 +32,22 @@ public class CrudObjetos {
 			p.setVida(p.getVida0() / objetos.getAccion());
 			actualizarCantidad(-1);
 		} else if (objetos.getTipo() == 3 && p.getVida() > 0) {
-			p.setAtaque(objetos.getAccion() + p.getAtaque());
+			p.setAtaque(objetos.getAccion() * p.getAtaque());
 			actualizarCantidad(-1);
 		} else if (objetos.getTipo() == 4 && p.getVida() > 0) {
-			p.setAtaqueEspecial(objetos.getAccion() + p.getAtaqueEspecial());
+			p.setAtaqueEspecial(objetos.getAccion() * p.getAtaqueEspecial());
 			actualizarCantidad(-1);
 		} else if (objetos.getTipo() == 5 && p.getVida() > 0) {
-			p.setDefensa(objetos.getAccion() + p.getDefensa());
+			p.setDefensa(objetos.getAccion() * p.getDefensa());
 			actualizarCantidad(-1);
 		} else if (objetos.getTipo() == 6 && p.getVida() > 0) {
-			p.setDefensaEspecial(objetos.getAccion() + p.getDefensaEspecial());
+			p.setDefensaEspecial(objetos.getAccion() * p.getDefensaEspecial());
 			actualizarCantidad(-1);
 		} else if (objetos.getTipo() == 7 && p.getVida() > 0) {
-			p.setVelocidad(objetos.getAccion() + p.getVelocidad());
+			p.setVelocidad(objetos.getAccion() * p.getVelocidad());
 			actualizarCantidad(-1);
 		} else if (objetos.getTipo() == 8 && p.getVida() > 0) {
-			p.setPrecision(objetos.getAccion() + p.getPrecision());
+			p.setPrecision(objetos.getAccion() * p.getPrecision());
 			actualizarCantidad(-1);
 		}
 	}
