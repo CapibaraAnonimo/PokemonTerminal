@@ -16,10 +16,6 @@ public class Imprimir {
 				+ pokemon.getMovimiento(1).getMovimiento().getNombre() + "\n" + i.cuadroAtaqueMedio() + "3." + pokemon.getMovimiento(2).getMovimiento().getNombre() + "\t" + "4."
 				+ pokemon.getMovimiento(3).getMovimiento().getNombre() + "\n" + i.cuadroAtaqueAbajo());
 	}
-	
-	public void pokemon(String pokemon) {
-
-	}
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// PARA IMPRIMIR LA VIDA HE USADO EL PRINTLN Y imprimiré lo que hay en getVida
@@ -40,7 +36,7 @@ public class Imprimir {
 	}
 	
 	public void imprimirSprites(Pokemon p1, Pokemon p2) {
-		for(int i = 0; i < p1.getSprite().length && i < p2.getSprite().length; i++)
+		for(int i = 0; ((i < p1.getSprite().length) && (i < p2.getSprite().length)); i++)
 		{
 			if(i < p1.getSprite().length)
 			{
@@ -49,7 +45,7 @@ public class Imprimir {
 				input.reverse();
 				System.out.printf(input + "\t\t\t\t");
 			}else {
-				System.out.printf("                                                                              \t\t\t\t");
+				System.out.printf(p1.getSprite()[0] + "\t\t\t\t");
 			}
 			
 			if(i < p2.getSprite().length)
@@ -59,8 +55,8 @@ public class Imprimir {
 				System.out.println();
 			}
 			
-			if(i >= p2.getSprite().length && i <= p1.getSprite().length)
-				i = 305;
+			if(i >= p2.getSprite().length && i >= p1.getSprite().length)
+				i = 1000;
 		}
 	}
 
