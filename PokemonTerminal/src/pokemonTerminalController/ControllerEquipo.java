@@ -18,7 +18,7 @@ public class ControllerEquipo {
 			{
 				System.out.println(lp.stats[j]);
 			}
-			System.out.printf("Seleccione el pokemon %d\n", (i+1));
+			System.out.printf("Seleccione el pokemon (id pokedex nacional) %d\n", (i+1));
 			equipo.actualizarPokemon(new CrudPokemon(lp.getPokemon(Leer.datoInt())), i);
 		}
 		System.out.println("Tu equipo es: \n");
