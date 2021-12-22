@@ -10,14 +10,14 @@ public class ControllerMov {
 	public static int calcularDaño(Pokemon atacante, int ataque, Pokemon defensor)
 	{
 		
-		return (int)((((((2*atacante.getNivel())/5)+2)*atacante.getMovimiento(ataque).getPoder()*(calcularAtaque(atacante, ataque)/calcularDefensa(atacante, ataque)))/50) * calcularCritico(atacante)*calcularRandom()*calcularBMTA(atacante, ataque)*calcularEfectividad(atacante, defensor)*calcularPrecision(atacante, ataque));
+		return (int)((((((2*atacante.getNivel())/5)+2)*atacante.getMovimiento(ataque).getMovimiento().getPoder()*(calcularAtaque(atacante, ataque)/calcularDefensa(atacante, ataque)))/50) * calcularCritico(atacante)*calcularRandom()*calcularBMTA(atacante, ataque)*calcularEfectividad(atacante, defensor)*calcularPrecision(atacante, ataque));
 	}
 	
 	
 	//Te devuelve el ataque correspondiente a la categoria del movimiento
 	public static int calcularAtaque(Pokemon p, int ataque)
 	{
-		if(p.getMovimiento(ataque).getCategoria() == 1)
+		if(p.getMovimiento(ataque).getMovimiento().getCategoria() == 1)
 		{
 			return p.getAtaque();
 		}else {
@@ -28,7 +28,7 @@ public class ControllerMov {
 	//Te devuelve la defensa correspondiente a la categoria del movimiento
 	public static int calcularDefensa(Pokemon p, int ataque)
 	{
-		if(p.getMovimiento(ataque).getCategoria() == 1)
+		if(p.getMovimiento(ataque).getMovimiento().getCategoria() == 1)
 		{
 			return p.getDefensa();
 		}else {
@@ -97,7 +97,7 @@ public class ControllerMov {
 	//Te devuelve el BMTA (Bonus de mismo tipo de ataque)
 	public static double calcularBMTA(Pokemon p, int ataque)
 	{
-		if(p.getTipo() == p.getMovimiento(ataque).getTipo())
+		if(p.getTipo() == p.getMovimiento(ataque).getMovimiento().getTipo())
 		{
 			return 1.5;
 		}else
@@ -119,7 +119,7 @@ public class ControllerMov {
 		double random = 0;
 		
 		random = ran.nextInt(max-min)+min;
-		if(random <= p.getMovimiento(ataque).getPrecision())
+		if(random <= p.getMovimiento(ataque).getMovimiento().getPrecision())
 		{
 			return 1;
 		} else

@@ -1,14 +1,12 @@
 package pokemonTerminalController;
 
 import pokemonTerminalCrud.CrudEquipo;
-import pokemonTerminalDatos.PokeStats;
 import pokemonTerminalVista.Imprimir;
 import utilidades.Leer;
 
 public class ControllerPartida {
 	
 	public static void batalla(CrudEquipo equipos[]) {
-		PokeStats lp = new PokeStats();
 		Imprimir imprimir = new Imprimir();
 		
 		int atacante = 0;
