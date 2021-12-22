@@ -25,7 +25,7 @@ public class ControllerPartida {
 			imprimir.imprimirVida(equipos[defensor].getEquipo().getPokemon(equipos[defensor].getEquipo().getPosicion()).getPokemon());
 			imprimir.imprimirVidaDibujo(equipos[defensor].getEquipo().getPokemon(equipos[defensor].getEquipo().getPosicion()).getPokemon());
 			System.out.println("");
-			imprimir.menuMovimiento(equipos[defensor].getEquipo().getPokemon(equipos[defensor].getEquipo().getPosicion()).getPokemon());
+			imprimir.menuMovimiento(equipos[atacante].getEquipo().getPokemon(equipos[atacante].getEquipo().getPosicion()).getPokemon());
 			do 
 			{
 				System.out.println("\nDiga ataque deseado");
