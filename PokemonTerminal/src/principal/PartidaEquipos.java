@@ -22,8 +22,11 @@ public class PartidaEquipos {
 	public static void main(String[] args) throws InterruptedException 
 	{
 		CrudEquipo equipos[] = new CrudEquipo[2];
+		Imprimir im = new Imprimir();
 		
-
+		im.imprimirLogo();
+		System.out.println("Pulse culquier tecla para continuar\n");
+		Leer.datoChar();
 		for(int i = 0; i < equipos.length; i++)
 		{
 			System.out.println("Diga su nombre o nombre de equipo");

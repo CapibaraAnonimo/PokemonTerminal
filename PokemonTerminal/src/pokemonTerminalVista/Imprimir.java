@@ -8,10 +8,8 @@ public class Imprimir {
 	// Por ahora les declaro estos nombres para saber donde van cada uno en el menú
 
 
-	CuadroAtaquesImprimir i;
+	CuadroAtaquesImprimir i = new CuadroAtaquesImprimir();;
 	public void menuMovimiento(Pokemon pokemon) {
-
-		CuadroAtaquesImprimir i = new CuadroAtaquesImprimir();
 		System.out.println(i.cuadroAtaqueArriba() + "\n" + i.cuadroAtaqueMedio() + "1." + pokemon.getMovimiento(0).getMovimiento().getNombre() + "\t" + "2."
 				+ pokemon.getMovimiento(1).getMovimiento().getNombre() + "\n" + i.cuadroAtaqueMedio() + "3." + pokemon.getMovimiento(2).getMovimiento().getNombre() + "\t" + "4."
 				+ pokemon.getMovimiento(3).getMovimiento().getNombre() + "\n" + i.cuadroAtaqueAbajo());
