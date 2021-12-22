@@ -49,6 +49,13 @@ public class ControllerPartida {
 				atacante = 1;
 			}
 		}while(equipos[atacante].getEquipo().getPokemon(equipos[atacante].getEquipo().getPosicion()).getPokemon().getVida() > 0 && equipos[defensor].getEquipo().getPokemon(equipos[defensor].getEquipo().getPosicion()).getPokemon().getVida() > 0);
+		if(equipos[atacante].getEquipo().getPokemon(equipos[atacante].getEquipo().getPosicion()).getPokemon().getVida() > 0)
+		{
+			System.out.println("Ha ganado " + equipos[defensor].getEquipo().getNombreEquipo());
+		} else
+		{
+			System.out.println("Ha ganado " + equipos[atacante].getEquipo().getNombreEquipo());
+		}
 	}
 
 }
