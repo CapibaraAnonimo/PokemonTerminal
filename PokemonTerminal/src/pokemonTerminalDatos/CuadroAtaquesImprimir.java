@@ -59,6 +59,9 @@ public class CuadroAtaquesImprimir {
 			+ "                        ████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▀                                                                                                                              ▐▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▌\r\n"
 			+ "                         ████▓▓▓▓▓▓▓██▀▀▀                                                                                                                                   ▀▀▀██▓▓██▓▓▓▓▓\r\n"
 			+ "                          █████▀▀▀        ");
+	public String logoInicio() {
+		return logo;
+	}
 	
 	
 	
