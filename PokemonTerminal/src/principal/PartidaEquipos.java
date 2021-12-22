@@ -12,12 +12,12 @@ public class PartidaEquipos {
 	  Adrían: Main, un modelo y un crud, imprimir sprites, controllers
 	  Ana Pilar: la mitad de imprimir, la mitad de crud, la mayoría de los sprites
 	  Carlos: la mayoria de Models, todos los movimientos de datos
-	  Maylor: la mitad de imprimir, la mitad de crud, añadido las stats de los pokemon*/
+	  Maylor: la mitad de imprimir, la mitad de crud, añadido las stats de los pokemon y un poco de los sprites*/
 
 	/*Al ejecutar la partida se te pide nombre y 6 pokemons, aunque todavía no se puede cambiar de pokemons en 
 	  la partida, en la tienda se pueden hacer las compras y pagar, pero no se pueden usar todavía en partida,
 	  aunque está hecho el metodo para ello; una vez en la partida se puede atacar pero algunos ataques no hacen
-	  nunca daño, tengo que ver por qué aún*/
+	  nunca daño, tengo que ver el por qué aún*/
 	public static void main(String[] args) throws InterruptedException 
 	{
 		
