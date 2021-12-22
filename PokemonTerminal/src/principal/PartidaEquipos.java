@@ -26,7 +26,7 @@ public class PartidaEquipos {
 		
 		
 		im.imprimirLogo();
-		System.out.println("Pulse culquier tecla para continuar\n");
+		System.out.println("Pulse intro para continuar\n");
 		Leer.datoChar();
 		for(int i = 0; i < equipos.length; i++)
 		{
