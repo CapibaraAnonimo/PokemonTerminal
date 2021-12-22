@@ -36,11 +36,11 @@ public class CrudObjetos {
 					}else if (objetos.getTipo() == 5 && p.getVida() > 0) {
 						p.setDefensa(objetos.getAccion() + p.getDefensa());
 						}else if (objetos.getTipo() == 6 && p.getVida() > 0) {
-							p.setDefensa(objetos.getTipo() + p.getDefensa());
+							p.setDefensaEspecial(objetos.getAccion() + p.getDefensaEspecial());
 							}else if (objetos.getTipo() == 7 && p.getVida() > 0) {
-								p.setVelocidad(objetos.getTipo() + p.getVelocidad());
+								p.setVelocidad(objetos.getAccion() + p.getVelocidad());
 								}else if (objetos.getTipo() == 8 && p.getVida() > 0) {
-								p.setPrecision(objetos.getTipo() + p.getPrecision());
+								p.setPrecision(objetos.getAccion() + p.getPrecision());
 								}
 	}
 	
