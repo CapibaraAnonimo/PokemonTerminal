@@ -4,6 +4,7 @@ import pokemonTerminalController.ControllerEquipo;
 import pokemonTerminalController.ControllerPartida;
 import pokemonTerminalController.ControllerTienda;
 import pokemonTerminalCrud.CrudEquipo;
+import pokemonTerminalVista.Imprimir;
 import utilidades.Leer;
 
 public class PartidaEquipos {
@@ -12,7 +13,7 @@ public class PartidaEquipos {
 	{
 		CrudEquipo equipos[] = new CrudEquipo[2];
 		
-			
+
 		for(int i = 0; i < equipos.length; i++)
 		{
 			System.out.println("Diga su nombre o nombre de equipo");
